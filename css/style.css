@@ -1,112 +1,35 @@
+
 @charset "utf-8";
-/***
-    The new CSS reset - version 1.11.2 (last updated 15.11.2023)
-    GitHub page: https://github.com/elad2412/the-new-css-reset
-***/
 
-/*
-    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
-    - The "symbol *" part is to solve Firefox SVG sprite bug
-    - The "html" element is excluded, otherwise a bug in Chrome breaks the CSS hyphens property (https://github.com/elad2412/the-new-css-reset/issues/36)
- */
- *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
-  all: unset;
-  display: revert;
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;/* normal は 400、bold は 700 */
+  line-height: 1.5;
+  color: #505050;
 }
 
-/* Preferred box-sizing value */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+a {
+  display: inline-block;
+  text-decoration: none;
+  transition: none;
+  transition: opacity 0.4s;
 }
 
-/* Fix mobile Safari increase font-size on landscape mode */
-html {
-  -moz-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  text-size-adjust: none;
+a:hover {
+  opacity: 0.7;
 }
 
-/* Reapply the pointer cursor for anchor tags */
-a, button {
-  cursor: revert;
-}
-
-/* Remove list styles (bullets/numbers) */
-ol, ul, menu, summary {
-  list-style: none;
-}
-
-/* For images to not be able to exceed their container */
 img {
-  max-inline-size: 100%;
-  max-block-size: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-/* removes spacing between cells in tables */
-table {
-  border-collapse: collapse;
-}
-
-/* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
-input, textarea {
-  -webkit-user-select: auto;
-}
-
-/* revert the 'white-space' property for textarea elements on Safari */
-textarea {
-  white-space: revert;
-}
-
-/* minimum style to allow to style meter element */
-meter {
-  -webkit-appearance: revert;
-  appearance: revert;
-}
-
-/* preformatted text - use only for this feature */
-:where(pre) {
-  all: revert;
-  box-sizing: border-box;
-}
-
-/* reset default text opacity of input placeholder */
-::placeholder {
-  color: unset;
-}
-
-/* fix the feature of 'hidden' attribute.
- display:revert; revert to element instead of attribute */
-:where([hidden]) {
-  display: none;
-}
-
-/* revert for bug in Chromium browsers
- - fix for the content editable attribute will work properly.
- - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element*/
-:where([contenteditable]:not([contenteditable="false"])) {
-  -moz-user-modify: read-write;
-  -webkit-user-modify: read-write;
-  overflow-wrap: break-word;
-  -webkit-line-break: after-white-space;
-  -webkit-user-select: auto;
-}
-
-/* apply back the draggable feature - exist only in Chromium and Safari */
-:where([draggable="true"]) {
-  -webkit-user-drag: element;
-}
-
-/* Revert Modal native behavior */
-:where(dialog:modal) {
-  all: revert;
-  box-sizing: border-box;
-}
-
-/* Remove details summary webkit styles */
-::-webkit-details-marker {
-  display: none;
+.inner {
+  max-width: 1080px;
+  padding-inline: 100px;
+  margin-inline: auto;
 }
 
 /* header */
@@ -118,19 +41,83 @@ meter {
     left: 0;
     z-index: 9999;
     background-color: #fff;
+    
 }
 
 .header__inner {
     display: flex;
     justify-content: space-between;
     height: inherit;
+    align-items: center;
 }
 
 .header__logo {
-    height: inherit;
+  display: flex;         /* 横並びにする */
+  align-items: center;   /* 上下中央揃えにする */
+  padding-left: 100px;
+}
+
+.logo {
+  width: 25px;
+  height: auto;
+  margin-right: 9.51px;
+}
+
+.site-title {
+  font-size: 1.125rem;
+  font-weight: bold;
 }
 
 .header__link {
     height: inherit;
     font-size: 1.125rem;
+    display: flex;
+    align-items: center;     /* 上下中央揃え */
+}
+
+.header-nav {
+  height: inherit;
+}
+
+.header-nav__lists {
+  display: flex;
+  column-gap: 10px;
+  height: inherit;
+  align-items: center;
+  padding-right: 60px;
+}
+
+.header-nav__link {
+  font-size: 0.875rem;
+  color: #505050;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+/* FV */
+.fv {
+  position: relative;
+  height: 500px;
+  margin-top: 50px;
+}
+
+.fv__text {
+  position: absolute;
+  top: 50%;
+  background-color:rgba(255, 255, 255, 0.702);
+  display: inline-block;
+  padding: 23px 35px 23px 99px;
+  transform: translate(0%, -50%);
+}
+
+.fv__text p {
+  font-size: 1.6rem;
+}
+
+.fv__text01 {
+  color: #0D96A0;
+  font-size: 2.5rem;
+  line-height: 60px;
 }
