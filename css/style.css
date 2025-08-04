@@ -121,3 +121,36 @@ img {
   font-size: 2.5rem;
   line-height: 60px;
 }
+
+/* greeting */
+.greeting {
+  padding: 66px 60px 54px 60px;
+  position: relative;
+}
+
+.text_02 {
+  color: #0D96A0;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 15px;
+  z-index: 2;
+  line-height: 30px;
+  font-weight: 700;/* bold */ 
+}
+
+.text_03 {
+  font-size: 1.125rem;
+  text-align: center;
+  line-height: 33px;
+  font-weight: 500;/* medium */
+  z-index: 2;
+}
+
+.greeting-img {
+  position: absolute;
+  right: 76.24px;
+  bottom: 27.88px;
+  width: 83.75px;
+  height: auto;
+  z-index: 1;
+}
