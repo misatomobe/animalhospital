@@ -207,3 +207,30 @@ img {
   column-gap: calc(45 / 880 * 100%);
   margin-top: 48px;
 }
+
+/* service */
+.service {
+  padding-block: 77px 60px;
+}
+
+.service__items {
+  max-width: 880px;
+  margin-inline: auto;
+  margin-top: 35px;
+  text-align: center;
+  display: flex;
+  column-gap: calc(50 / 880 * 100%);
+}
+
+.service-item__desc01 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 20px 0 8px 0;
+  line-height: 25px;
+}
+
+.service-item__desc02 {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 30px;
+}
