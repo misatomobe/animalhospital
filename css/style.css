@@ -57,10 +57,25 @@ img {
   padding-left: 100px;
 }
 
+@media screen and (max-width: 767px) {
+  .header__logo {
+    font-size: 1.25rem;
+    padding-left: 20px;
+  }
+}
+
 .logo {
   width: 25px;
   height: auto;
   margin-right: 9.51px;
+}
+
+@media screen and (max-width: 767px) {
+  .logo {
+    width: 25px;
+    height: auto;
+    margin-left: 9.51px;
+  }
 }
 
 .site-title {
@@ -79,6 +94,11 @@ img {
   height: inherit;
 }
 
+@media screen and (max-width: 767px) {
+  .header__nav {
+    display: none;
+  }
+}
 .header-nav__lists {
   display: flex;
   column-gap: 10px;
@@ -99,8 +119,28 @@ img {
 /* FV */
 .fv {
   position: relative;
-  height: 500px;
   margin-top: 50px;
+}
+
+@media screen and (min-width: 767px) {
+  .fv {
+    position: relative;
+  }
+}
+
+.fv__img {
+  position: relative;
+  height: auto;     /* カンプに合わせる高さ */
+  margin-top: 50px;  /* headerの高さ分 */
+  width: 100%;
+  overflow: hidden; /* 高さは画像の比率に合わせる */
+}
+
+@media screen and (max-width: 767px) {
+  .fv__img {
+    width: 100%;
+    height: auto;
+  }  
 }
 
 .fv__text {
@@ -112,14 +152,75 @@ img {
   transform: translate(0%, -50%);
 }
 
+@media screen and (max-width: 1000px) {
+  .fv__text {
+    top: 50%;
+    padding: 20px 30px 20px 99px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .fv__text {
+    top: 50%;
+    padding: 10px 20px 10px 99px;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .fv__text {
+    top: 88%;
+    padding: 18px 23px 14px 20px;
+  }
+}
+
 .fv__text p {
   font-size: 1.6rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .fv__text p {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .fv__text p {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .fv__text p {
+    font-size: 1.25rem;
+  }
 }
 
 .fv__text01 {
   color: #0D96A0;
   font-size: 2.5rem;
   line-height: 60px;
+}
+
+@media screen and (max-width: 1000px) {
+   .fv__text01 {
+    font-size: 2.1rem;
+    line-height: 40px;
+   }
+}
+
+@media screen and (max-width: 880px) {
+   .fv__text01 {
+    font-size: 1.8rem;
+    line-height: 40px;
+   }
+}
+
+@media screen and (max-width: 767px) {
+   .fv__text01 {
+    font-size: 1.9rem;
+    line-height: 40px;
+   }
 }
 
 /* greeting */
