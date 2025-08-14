@@ -166,13 +166,27 @@ img {
   }
 }
 
-
 @media screen and (max-width: 767px) {
   .fv__text {
-    top: 88%;
+    top: auto;
+    bottom: 0;
+    transform: none;
     padding: 18px 23px 14px 20px;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .fv__text {
+    padding: 18px 23px 14px 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .fv__text {
+    padding: 18px 18px 14px 20px;
+  }
+}
+
 
 .fv__text p {
   font-size: 1.6rem;
@@ -191,6 +205,12 @@ img {
 }
 
 @media screen and (max-width: 767px) {
+  .fv__text p {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
   .fv__text p {
     font-size: 1.25rem;
   }
@@ -223,6 +243,13 @@ img {
    }
 }
 
+@media screen and (max-width: 375px) {
+   .fv__text01 {
+    font-size: 1.9rem;
+    line-height: 40px;
+   }
+}
+
 /* greeting */
 .greeting {
   padding: 66px 60px 54px 60px;
@@ -232,6 +259,13 @@ img {
   background-size: 83.75px auto;
   background-position: calc(100% - 76.24px) calc(100% - 27.88px);
   min-height: 300px; 
+}
+
+@media screen and (max-width: 767px){
+  .greeting {
+    padding: 49px 20px 49px 20px;
+    background-position: calc(100% - 29.55px) calc(100% - 46.57px);
+  }
 }
 
 .text_02 {
@@ -244,6 +278,19 @@ img {
   font-weight: 700;/* bold */ 
 }
 
+@media screen and (min-width: 375px) {
+  .text_02 {
+    font-size: 1.5625rem;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .text_02 {
+    font-size: 2.4rem;
+    line-height: 40px;
+  }
+}
+
 .text_03 {
   font-size: 1.125rem;
   text-align: center;
@@ -251,6 +298,24 @@ img {
   font-weight: 500;/* medium */
   z-index: 2;
 }
+
+@media screen and (max-width: 767px) {
+  .text_03 {
+    font-size: 1rem;
+    text-align: left;
+  }
+}
+
+.br-sp {
+  display: none;/* 初期状態は改行非表示 */
+}
+
+@media screen and (max-width: 767px) {
+  .br-sp {
+    display: inline;/* 767px以下で改行表示 */
+  }
+}
+
 
 /* strength */
 .strength {
