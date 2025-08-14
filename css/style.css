@@ -388,6 +388,7 @@ img {
 @media screen and (max-width: 767px) {
   .strength__content01, .strength__content02 {
     flex-direction: column; /* 縦並び */
+    margin-top: 42px;
   }
 
   .strength__image {
