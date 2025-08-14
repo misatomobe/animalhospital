@@ -32,6 +32,11 @@ img {
   margin-inline: auto;
 }
 
+@media screen and (max-width: 767px) {
+  .inner {
+    padding: 0 20px 0 20px;
+  }
+}
 /* header */
 .header {
     width: 100%;
@@ -396,6 +401,21 @@ img {
   font-weight: 500;
   line-height: 30px;
 }
+
+@media screen and (max-width: 767px) {
+  .service__container {
+    flex-direction: column; /* 縦並び */
+  }
+
+  .service-item__image {
+    order: 1; /* 写真を先に */
+  }
+
+  .service-item__text {
+    order: 2; /* 文字を後に */
+  }
+}
+
 
 /* news */
 .news {
