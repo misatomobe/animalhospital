@@ -438,10 +438,28 @@ img {
   line-height: 25px;
 }
 
+@media screen and (max-width: 767px) {
+  .service-item__desc01 {
+    margin: 0 0 7px 0;
+  }
+}
+
 .service-item__desc02 {
   font-size: 1rem;
   font-weight: 500;
   line-height: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .service-item__desc02 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .service-item__image {
+    padding-block: 44px 30px;
+  }
 }
 
 
