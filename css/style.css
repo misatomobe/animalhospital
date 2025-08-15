@@ -416,13 +416,19 @@ img {
   padding-block: 77px 60px;
 }
 
-.service__items {
+.service__container {
   max-width: 880px;
   margin-inline: auto;
   margin-top: 35px;
   text-align: center;
   display: flex;
   column-gap: calc(50 / 880 * 100%);
+}
+
+@media screen and (max-width: 767px) {
+  .service__container {
+    flex-direction: column;
+  }
 }
 
 .service-item__desc01 {
