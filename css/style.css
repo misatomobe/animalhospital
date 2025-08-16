@@ -545,7 +545,7 @@ th,td {
 }
 
 @media screen and (max-width: 767px) {
-  table, th, td, tr {
+  table, th, td, tr, tbody {
     display: block; /* 全部ブロック要素化 */
     width: 100%;
   }
@@ -769,6 +769,12 @@ th,td {
 
 .form__item:not(:first-of-type) {
   margin-top: 45px;
+}
+
+@media screen and (max-width: 767px) {
+  .form__item:not(:first-of-type) {
+    margin-top: 17px;
+  }
 }
 
 .form__label {
