@@ -923,6 +923,22 @@ input[type="submit"]:hover {
   margin-block: 27px 9px;
 }
 
+@media screen and (max-width: 767px) {
+  .footer__copyright {
+    font-size: 1rem;
+    line-height: 33px;
+    margin-block: 15px 28px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer__copyright {
+    font-size: 0.875rem;
+    line-height: 33px;
+    margin-block: 15px 28px;
+  }
+}
+
 .sns {
   display: flex;
   align-items: center;
