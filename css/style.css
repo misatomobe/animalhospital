@@ -598,7 +598,6 @@ th,td {
     width: 100%;
     height: auto;
   }
-  
 }
 
 .access__text01 {
@@ -737,6 +736,20 @@ th,td {
   text-align: center;
 }
 
+@media screen and (max-width: 767px) {
+  .section-desc {
+    font-size: 1rem;
+    line-height: 30px;
+    text-align: center;
+    margin: 43px 0 34px 0;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .section-desc {
+    text-align: left;
+  }
+}
 .form {
   max-width: 880px;
   margin-inline: auto;
@@ -808,6 +821,25 @@ input[type="submit"] {
 input[type="submit"]:hover {
   color: #FFF;
   background-color: #085358;
+}
+
+@media screen and (max-width: 767px) {
+  .form__items {
+    display: flex;
+    flex-direction: column;
+  }
+  .form__item {
+    display: flex;
+    flex-direction: column;
+  }
+  .form__label {
+    width: 100%;
+  }
+
+  .form__input,
+  .form__textarea {
+    width: 100%;
+  }
 }
 
 /* footer */
