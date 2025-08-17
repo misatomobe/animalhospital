@@ -255,7 +255,7 @@ img {
 
 /* greeting */
 .greeting {
-  padding: 68px 60px 50px 60px;
+  padding: 68px 60px 48px 60px;
   position: relative;
   background-image: url("../images/asiato_2.jpg");/* フォルダの位置に注意 */
   background-repeat: no-repeat;
@@ -320,7 +320,7 @@ img {
 
 /* strength */
 .strength {
-  padding-block: 85px 54px;
+  padding-block: 78px 54px;
 }
 
 @media screen and (max-width: 767px) {
@@ -408,6 +408,13 @@ img {
     text-align: 30px;
   }
 }
+
+.strength__image img {
+  max-width: 880px;
+  height: auto;
+  width: 100%;
+}
+
 /* service */
 .service {
   padding-block: 77px 60px;
