@@ -319,7 +319,7 @@ img {
 
 /* strength */
 .strength {
-  padding-block: 78px 54px;
+  padding-block: 65px 66px;
 }
 
 @media screen and (max-width: 767px) {
@@ -334,8 +334,15 @@ img {
   gap: 20px; /* 画像とh2の間の隙間 */
 }
 
+.section-title02 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px; /* 画像とh2の間の隙間 */
+}
+
 /* section-title h2 見出し（全セクション共通） */
-.section-title h2 {
+.section-title h2, .section-title02 h2 {
   font-size: 1.6rem;
 }
 
@@ -359,7 +366,7 @@ img {
   font-size: 1.375rem;
   font-weight: 700;
   line-height: 33px;
-  margin: 48px 0 20px 0;
+  margin: 48px 0 18px 0;
   letter-spacing: -0.01em;
 }
 
@@ -378,7 +385,7 @@ img {
 .strength__content02 {
   display: flex;
   justify-content: center;
-  column-gap: calc(46 / 880 * 100%);
+  column-gap: calc(45 / 880 * 100%);
   margin-top: 48px;
 }
 
@@ -410,13 +417,13 @@ img {
 }
 
 .strength__image img {
-  width: 1050px;
+  width: 1045px;
   height: auto;
 }
 
 /* service */
 .service {
-  padding-block: 77px 60px;
+  padding-block: 63px 60px;
 }
 
 .service__container {
