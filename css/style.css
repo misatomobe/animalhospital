@@ -124,7 +124,6 @@ img {
 /* FV */
 .fv {
   position: relative;
-  margin-top: 50px;
 }
 
 @media screen and (min-width: 767px) {
@@ -135,7 +134,7 @@ img {
 
 .fv__img {
   position: relative;
-  max-height: 494px; /* 高さは自動調整 */
+  max-height: 500px; /* 高さは自動調整 */
   display: block; /* 下の隙間防止 */
   margin-top: 50px;  /* headerの高さ分 */
   width: 100%;
@@ -151,10 +150,10 @@ img {
 
 .fv__text {
   position: absolute;
-  top: 52%;
+  top: 51%;
   background-color:rgba(255, 255, 255, 0.702);
   display: inline-block;
-  padding: 23px 38px 27px 99px;
+  padding: 23px 38px 30px 99px;
   transform: translate(0%, -50%);
 }
 
@@ -255,7 +254,7 @@ img {
 
 /* greeting */
 .greeting {
-  padding: 68px 60px 48px 60px;
+  padding: 68px 60px 65px 60px;
   position: relative;
   background-image: url("../images/asiato_2.jpg");/* フォルダの位置に注意 */
   background-repeat: no-repeat;
@@ -361,6 +360,7 @@ img {
   font-weight: 700;
   line-height: 33px;
   margin: 48px 0 20px 0;
+  letter-spacing: -0.01em;
 }
 
 @media screen and (max-width: 767px) {
@@ -378,7 +378,7 @@ img {
 .strength__content02 {
   display: flex;
   justify-content: center;
-  column-gap: calc(45 / 880 * 100%);
+  column-gap: calc(46 / 880 * 100%);
   margin-top: 48px;
 }
 
@@ -410,9 +410,8 @@ img {
 }
 
 .strength__image img {
-  max-width: 880px;
+  width: 1050px;
   height: auto;
-  width: 100%;
 }
 
 /* service */
