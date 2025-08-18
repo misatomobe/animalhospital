@@ -254,12 +254,12 @@ img {
 
 /* greeting */
 .greeting {
-  padding: 68px 60px 65px 60px;
+  padding: 66px 60px 58px 60px;
   position: relative;
   background-image: url("../images/asiato_2.jpg");/* フォルダの位置に注意 */
   background-repeat: no-repeat;
   background-size: 83.75px auto;
-  background-position: calc(100% - 76.24px) calc(100% - 19.88px);
+  background-position: calc(100% - 76.24px) calc(100% - 32.88px);
 }
 
 @media screen and (max-width: 767px){
