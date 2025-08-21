@@ -582,7 +582,7 @@ tr {
 
 /* access */
 .access {
-  padding-block: 63px 70px;
+  padding-block: 65px 70px;
 }
 
 @media screen and (max-width: 767px) {
@@ -612,7 +612,7 @@ tr {
 }
 
 .access__image {
-  width: 100%;
+  max-width: 440px;
   height: auto;
   display: block;
 }
@@ -632,7 +632,7 @@ tr {
 .access__text01 {
   font-size: 1.3rem;
   line-height: 33px;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 }
 
 @media screen and (max-width: 767px) {
@@ -645,7 +645,7 @@ tr {
 .access__text02 {
   font-size: 1.125rem;
   line-height: 27px;
-  margin-bottom: 23px;
+  margin-bottom: 14px;
 }
 
 @media screen and (max-width: 767px) {
@@ -659,7 +659,6 @@ tr {
 .access__text03 {
   font-size: 1.125rem;
   line-height: 40px;
-  margin-bottom: 8px;
 }
 
 @media screen and (max-width: 767px) {
@@ -687,7 +686,7 @@ tr {
 .access__text04 {
   font-size: 1.125rem;
   line-height: 27px;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 767px) {
@@ -701,7 +700,7 @@ tr {
 .underline {
   border-bottom: #707070 1px solid;
   display: block;          /* 横幅を全体にする */
-  padding-bottom: 27px;
+  padding-bottom: 28px;
 }
 
 @media screen and (max-width: 767px) {
