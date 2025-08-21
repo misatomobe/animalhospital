@@ -28,6 +28,7 @@ img {
 
 .inner {
   max-width: 1080px;
+  width: 100%;
   padding-inline: 100px;
   margin-inline: auto;
 }
@@ -496,21 +497,29 @@ img {
 th {
   border-top: 1px solid #707070;
   border-bottom: 1px solid #707070;
-  padding: 15px 0 15px 0 ;
+  padding: 15px 0 15px 5px ;
   text-align: left;
 }
 
 td {
   border-top: 1px solid #707070;
   border-bottom: 1px solid #707070;
-  padding: 15px 0 0 2px ;
+  padding: 15px 0 0 20px;
   text-align: left;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+tr {
+  height: 60px;
 }
 
 @media screen and (max-width: 767px) {
   .line {
     border-top: 1px solid #707070;
     border-bottom: 1px solid #707070;
+    
   }
 
   th,td {
@@ -530,10 +539,14 @@ td {
     padding: 0 0 28px 10px;
   }
 
+  tr {
+    height: 162px;
+  }
+
 }
 
 .th01 {
-  font-size: 1.1rem;
+  font-size: 1.0625rem;
   font-weight: 700;
   line-height: 25px;
   padding-left: 20px;
@@ -546,11 +559,7 @@ td {
   color: #0D96A0;
 }
 
-.td {
-  font-size: 1.1rem;
-  font-weight: 500;
-  line-height: 30px;
-}
+
 
 @media screen and (max-width: 767px) {
   .td {
