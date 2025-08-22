@@ -582,7 +582,7 @@ tr {
 
 /* access */
 .access {
-  padding-block: 65px 70px;
+  padding-block: 65px 67px;
 }
 
 @media screen and (max-width: 767px) {
@@ -659,6 +659,7 @@ tr {
 .access__text03 {
   font-size: 1.125rem;
   line-height: 40px;
+  margin-bottom: 5px;
 }
 
 @media screen and (max-width: 767px) {
@@ -672,7 +673,7 @@ tr {
 .access__text07 {
   color: #0D96A0;
   font-size: 1.6rem;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 }
 
 @media screen and (max-width: 767px) {
@@ -686,7 +687,7 @@ tr {
 .access__text04 {
   font-size: 1.125rem;
   line-height: 27px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 767px) {
@@ -700,7 +701,7 @@ tr {
 .underline {
   border-bottom: #707070 1px solid;
   display: block;          /* 横幅を全体にする */
-  padding-bottom: 28px;
+  padding-bottom: 25px;
 }
 
 @media screen and (max-width: 767px) {
@@ -716,6 +717,7 @@ tr {
 .access__text05 {
   font-size: 1.125rem;
   line-height: 40px;
+  margin-top: 15px;
 }
 
 @media screen and (max-width: 767px) {
@@ -741,7 +743,7 @@ tr {
 .underline01 {
   border-bottom: #707070 1px solid;
   display: block;          /* 横幅を全体にする */
-  padding-bottom: 14px;
+  padding-bottom: 13px;
 }
 
 @media screen and (max-width: 767px) {
@@ -764,9 +766,9 @@ tr {
 }
 
 .section-desc {
-  font-size: 1.1rem;
+  font-size: 1.06rem;
   line-height: 30px;
-  margin: 25px 0 39px 0;
+  margin: 25px 0 37px 0;
   text-align: center;
 }
 
@@ -787,7 +789,7 @@ tr {
 .form {
   max-width: 880px;
   margin-inline: auto;
-  margin-top: 39px;
+  margin-top: 29px;
 }
 
 .form__item {
@@ -796,7 +798,7 @@ tr {
 }
 
 .form__item:not(:first-of-type) {
-  margin-top: 45px;
+  margin-top: 29px;
 }
 
 @media screen and (max-width: 767px) {
@@ -809,6 +811,8 @@ tr {
   font-size: 1.25rem;
   width: 140px;
   font-weight: 700;
+  padding: 6px 0 1px 0;
+  line-height: 33px;
 }
 
 .form__input {
@@ -889,10 +893,19 @@ input[type="submit"]:hover {
   }
 }
 
+.contact__button input[type="submit"] {
+  letter-spacing: 0.1em; /* 文字間を広げる */
+}
+
+#form__content {
+  letter-spacing: 1em; /* 文字間を広げる */
+}
+
+
 /* footer */
 .footer {
   background-color: #505050;
-  padding-block: 66px 72px;
+  padding-block: 47px 68px;
   text-align: center;
 }
 
@@ -909,14 +922,14 @@ input[type="submit"]:hover {
 
 .footer-nav {
   border-bottom: 1px solid #fff;
-  padding-block: 27px 9px;
+  padding-block: 18px 9px;
 }
 
 .footer-nav__lists {
   display: flex;
   justify-content: center;
   column-gap: 14px;
-  margin-block: 0 21px;
+  margin-block: 0 14px;
 }
 
 @media screen and (max-width: 767px) {
@@ -954,7 +967,7 @@ input[type="submit"]:hover {
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 33px;
-  margin-block: 27px 9px;
+  margin-block: 27px 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -978,7 +991,7 @@ input[type="submit"]:hover {
   align-items: center;
   justify-content: center;
   column-gap: 12px;
-  margin-top: 10px;
+  margin-top: 6px;
 }
 
 .sns__list img {
