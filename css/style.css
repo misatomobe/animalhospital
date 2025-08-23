@@ -309,8 +309,7 @@ img {
     padding: 48px 20px 39px 20px;
     background-position: calc(100% - 29.55px) calc(100% - 48.57px);
     background-image: url("../images/asiato_2_sp.jpg");
-    background-size: 68.75px auto;
-    
+    background-size: 68.75px auto; 
   }
 }
 
@@ -382,6 +381,13 @@ img {
     padding-block: 51px 35px;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .strength {
+    padding-block: 49px 35px;
+  }
+}
+
 .section-title {
   display: flex;
   align-items: center;
@@ -437,6 +443,22 @@ img {
   line-height: 33px;
 }
 
+@media screen and (max-width: 767px) {
+  .strength__desc {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 30px;
+}
+}
+
+@media screen and (max-width: 375px) {
+  .strength__desc {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 30px;
+}
+}
+
 .strength__content02 {
   display: flex;
   justify-content: center;
@@ -444,10 +466,10 @@ img {
   margin-top: 48px;
 }
 
-@media screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
   .strength__content01, .strength__content02 {
     flex-direction: column; /* 縦並び */
-    margin-top: 42px;
+    margin-top: 40px;
   }
 
   .strength__image {
@@ -475,6 +497,19 @@ img {
   width: 1045px;
   height: auto;
 }
+
+/* デフォルトでは非表示 */
+.br-sp02 {
+  display: none;
+}
+
+/* 767px以下で改行 */
+@media screen and (max-width: 767px) {
+  .br-sp02 {
+    display: block;
+  }
+}
+
 
 /* service */
 .service {
