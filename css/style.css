@@ -80,13 +80,21 @@ img {
   .logo {
     width: 25px;
     height: auto;
-    margin-left: 9.51px;
   }
 }
 
 .site-title {
   font-size: 1.125rem;
-  font-weight: bold;
+  font-weight: 700;
+  line-height: 33px;
+}
+
+@media screen and (max-width: 767px) {
+  .site-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 33px;
+  }
 }
 
 .header__link {
@@ -125,17 +133,19 @@ img {
 /* FV */
 .fv {
   position: relative;
+  margin-top: 50px;
 }
 
 @media screen and (min-width: 767px) {
   .fv {
     position: relative;
+    margin-top: 50px;
   }
 }
 
 .fv__img {
   position: relative;
-  max-height: 500px; /* 高さは自動調整 */
+  min-height: 500px; /* 高さ */
   display: block; /* 下の隙間防止 */
   margin-top: 50px;  /* headerの高さ分 */
   width: 100%;
@@ -144,9 +154,18 @@ img {
 
 @media screen and (max-width: 767px) {
   .fv__img {
-    width: 100%;
-    height: auto;
+    height: 100%; /* SPカンプの高さに合わせる */
+    margin-top: 50px;  /* headerの高さ分 */
+    min-height: 550px; /* 高さ */
   }  
+}
+
+@media screen and (max-width: 375px){
+    .fv__img {
+        height: 100%; /* SPカンプの高さに合わせる */
+        margin-top: 50px;  /* headerの高さ分 */
+        min-height: 550px; /* 高さ */
+    }
 }
 
 .fv__text {
@@ -170,13 +189,13 @@ img {
     top: auto;
     bottom: 0;
     transform: none;
-    padding: 18px 23px 14px 20px;
+    padding: 10px 23px 10px 20px;
   }
 }
 
 @media screen and (max-width: 375px) {
   .fv__text {
-    padding: 18px 23px 14px 20px;
+    padding: 19px 22px 10px 20px;
   }
 }
 
@@ -186,32 +205,44 @@ img {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .fv__text-inner {
+    position: relative;
+    top: -5px; /* ← スマホ時だけ文字を上げる */
+  }
+}
 
-.fv__text p {
+.fv__text00 {
   font-size: 1.5625rem;
+  line-height: 60px;
 }
 
 @media screen and (max-width: 1000px) {
-  .fv__text p {
+  .fv__text00 {
     font-size: 1.5rem;
+    line-height: 60px;
   }
 }
 
 @media screen and (max-width: 880px) {
-  .fv__text p {
+  .fv__text00 {
     font-size: 1.1rem;
+    line-height: 60px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .fv__text p {
+  .fv__text00 {
     font-size: 1.25rem;
+    line-height: 40px;
+
   }
 }
 
 @media screen and (max-width: 375px) {
-  .fv__text p {
+  .fv__text00 {
     font-size: 1.25rem;
+    line-height: 40px;
   }
 }
 
@@ -250,8 +281,9 @@ img {
    .fv__text01 {
     font-size: 1.9rem;
     line-height: 40px;
+    top: -0.4px;
    }
-}
+  }
 
 /* greeting */
 .greeting {
