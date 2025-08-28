@@ -607,7 +607,7 @@ th {
 td {
   border-top: 1px solid #707070;
   border-bottom: 1px solid #707070;
-  padding: 0 0 0 15px;
+  padding: 0 0 0px 15px;
   text-align: left;
   font-size: 1.0625rem;
   font-weight: 500;
@@ -686,7 +686,7 @@ tr {
 
 /* access */
 .access {
-  padding-block: 65px 67px;
+  padding-block: 64px 67px;
 }
 
 @media screen and (max-width: 767px) {
@@ -734,9 +734,10 @@ tr {
 }
 
 .access__text01 {
-  font-size: 1.3rem;
+  font-size: 1.375rem;
   line-height: 33px;
   margin-bottom: 13px;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 767px) {
@@ -750,6 +751,7 @@ tr {
   font-size: 1.125rem;
   line-height: 27px;
   margin-bottom: 14px;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 767px) {
@@ -762,8 +764,9 @@ tr {
 
 .access__text03 {
   font-size: 1.125rem;
-  line-height: 40px;
+  line-height: 27px;
   margin-bottom: 5px;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 767px) {
@@ -776,8 +779,10 @@ tr {
 
 .access__text07 {
   color: #0D96A0;
-  font-size: 1.6rem;
-  margin-bottom: 15px;
+  font-size: 1.5625rem;
+  margin-bottom: 5px;
+  font-weight: 700;
+  line-height: 40px;
 }
 
 @media screen and (max-width: 767px) {
@@ -791,7 +796,8 @@ tr {
 .access__text04 {
   font-size: 1.125rem;
   line-height: 27px;
-  margin-bottom: 10px;
+  font-weight: 500;
+  margin-top: 9px;
 }
 
 @media screen and (max-width: 767px) {
@@ -822,6 +828,8 @@ tr {
   font-size: 1.125rem;
   line-height: 40px;
   margin-top: 15px;
+  font-weight: 500;
+  padding-left: 5px;
 }
 
 @media screen and (max-width: 767px) {
@@ -834,6 +842,9 @@ tr {
 .access__text06 {
   font-size: 1.125rem;
   line-height: 40px;
+  margin-top: 1px;
+  font-weight: 500;
+  padding-left: 5px;
 }
 
 @media screen and (max-width: 767px) {
