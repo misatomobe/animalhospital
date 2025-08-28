@@ -399,7 +399,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px; /* 画像とh2の間の隙間 */
+  gap: 19px; /* 画像とh2の間の隙間 */
 }
 
 .section-title02 {
@@ -408,6 +408,8 @@ img {
   justify-content: center;
   gap: 15px; /* 画像とh2の間の隙間 */
 }
+
+
 
 /* section-title h2 見出し（全セクション共通） */
 .section-title h2, .section-title02 h2 {
@@ -913,7 +915,7 @@ tr {
 }
 
 .form__item:not(:first-of-type) {
-  margin-top: 29px;
+  margin-top: 30px;
 }
 
 @media screen and (max-width: 767px) {
