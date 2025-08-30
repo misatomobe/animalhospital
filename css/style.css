@@ -1092,7 +1092,7 @@ input[type="submit"]:hover {
 
 @media screen and (max-width: 767px) {
   .footer {
-    padding-block: 45px 50px;
+    padding-block: 25px 50px;
   }
 }
 
@@ -1104,6 +1104,11 @@ input[type="submit"]:hover {
 .footer-nav {
   border-bottom: 1px solid #fff;
   padding-block: 18px 9px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-nav {
+  padding-block: 20px 5px;
 }
 
 .footer-nav__lists {
@@ -1118,6 +1123,7 @@ input[type="submit"]:hover {
     display: flex;
     flex-wrap: wrap;        /* 画面幅に合わせて改行 */
     justify-content: center; /* 中央揃え */
+    column-gap: 20px;
   }
 }
 
@@ -1173,6 +1179,12 @@ input[type="submit"]:hover {
   justify-content: center;
   column-gap: 14px;
   margin-top: 7px;
+}
+
+@media screen and (max-width:767px) {
+  .sns {
+    margin-top: 18px;
+  }
 }
 
 .sns__list img {
