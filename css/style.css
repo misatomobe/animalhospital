@@ -337,7 +337,7 @@ img {
 
 @media screen and (max-width: 375px){
   .greeting {
-    padding: 48px 20px 39px 20px;
+    padding: 49px 20px 39px 20px;
     background-position: calc(100% - 29.55px) calc(100% - 48.57px);
     background-image: url("../images/asiato_2_sp.jpg");
     background-size: 68.75px auto; 
@@ -358,6 +358,7 @@ img {
   .text_02 {
     font-size: 1.5625rem;
     line-height: 35px;
+    margin-bottom: 18px;
   }
 }
 
@@ -502,7 +503,7 @@ img {
   @media screen and (max-width: 767px) {
   .strength__content01, .strength__content02 {
     flex-direction: column; /* 縦並び */
-    margin-top: 40px;
+    margin-top: 41px;
   }
 
   .strength__image {
@@ -551,7 +552,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .service {
-    padding-block: 45px 0;
+    padding-block: 42px 0;
   }
 }
 
@@ -580,7 +581,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .service-item__desc01 {
-    margin: 0 0 10px 0;
+    margin: 0 0 11px 0;
   }
 }
 
@@ -606,7 +607,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .service__item {
-    margin-bottom: 41px;
+    margin-bottom: 40px;
   }
 }
 
@@ -618,7 +619,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .news {
-    padding-block: 41px 28px;
+    padding-block: 42px 28px;
   }
 }
 
@@ -701,7 +702,8 @@ tr {
   }
   
   .td02 {
-     letter-spacing: -0.0777em; /* 狭める */
+     letter-spacing: -0.074em; /* 狭める */
+     padding: 0 10px 10px 10px;
   }
 
 .table table {
