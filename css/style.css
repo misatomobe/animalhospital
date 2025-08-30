@@ -200,7 +200,7 @@ img {
   padding: 0px 38px 20px 99px;
   transform: translate(0%, -50%);
   height: 210px;  /* 高さ */
-   width: 492px;   /* 横幅 */
+  width: 492px;   /* 横幅 */
 }
 
 
@@ -225,13 +225,10 @@ img {
 
 @media screen and (max-width: 375px) {
   .fv__text {
-    padding: 19px 0 10px 20px;
-  }
-}
+    height: 148px; 
+    width: 311px;
+    padding: 10px 10px 10px 20px;
 
-@media screen and (max-width: 320px) {
-  .fv__text {
-    padding: 18px 18px 14px 20px;
   }
 }
 
@@ -273,8 +270,7 @@ img {
 @media screen and (max-width: 375px) {
   .fv__text00 {
     font-size: 1.25rem;
-    line-height: 40px;
-    padding-top: 45px;
+    margin-top: 5px;
   }
 }
 
@@ -313,7 +309,6 @@ img {
    .fv__text01 {
     font-size: 1.9rem;
     line-height: 40px;
-    margin-top: -8px; /* ← この行だけ上に */
    }
   }
 
@@ -524,7 +519,7 @@ img {
 
   .strength__desc {
     font-size: 1rem;
-    text-align: 30px;
+    line-height: 30px;
   }
 }
 
@@ -613,9 +608,12 @@ img {
 }
 
 /* news */
-.news {
-  padding-block: 63px 68px;
-  position: relative;
+/* 1080px 以上のサイズに対応するスタイル */
+@media screen and (min-width: 1080px) {
+  .news {
+    padding-block: 63px 68px;
+    position: relative;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -624,14 +622,16 @@ img {
   }
 }
 
-.table {
-  border-collapse: collapse;
-  width: 100%;
-  margin-top: 43px;
-  max-width: none;
-}
-
-th {
+/* 1080px 以上のサイズに対応するスタイル */
+@media screen and (min-width: 1080px) {
+  .table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 43px;
+    max-width: none;
+  }     
+  
+  th {
   border-top: 1px solid #707070;
   border-bottom: 1px solid #707070;
   padding: 15px 0 15px 5px ;
@@ -651,6 +651,7 @@ td {
 tr {
   height: 60px;
 }
+}
 
 @media screen and (max-width: 767px) {
   .line {
@@ -662,7 +663,8 @@ tr {
   }
 }
 
-.th01 {
+@media screen and (min-width: 1080px) {
+  .th01 {
   font-size: 1.0625rem;
   font-weight: 700;
   line-height: 25px;
@@ -676,8 +678,7 @@ tr {
   color: #0D96A0;
   padding: 20px 0 0 2px;
 }
-
-
+}
 
 @media screen and (max-width: 767px) {
   .td {
@@ -706,6 +707,7 @@ tr {
      letter-spacing: -0.074em; /* 狭める */
      padding: 0 10px 10px 10px;
   }
+}
 
 .table table {
   width: 100%;
@@ -713,7 +715,7 @@ tr {
 }
 
 tr.line02 {
-  margin-top,
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -762,7 +764,7 @@ tr.line02 {
 }
 
 @media screen and (max-width: 767px) {
-  .access__image{
+  .access__image {
     padding-bottom: 29px;
     width: 100%;
   }
@@ -900,7 +902,9 @@ tr.line02 {
 @media screen and (max-width: 767px) {
   .underline01 {
     padding-bottom: 10px;
+  }
 }
+
 @media screen and (max-width: 767px) {
   .access__text {
     justify-content: left;
@@ -1012,7 +1016,7 @@ input[type="email"] {
 }
 }
 
-textarea {
+.form__textarea {
   background-color: #fff;
   width: 100%;
   height: 300px;
@@ -1085,7 +1089,6 @@ input[type="submit"]:hover {
   letter-spacing: 1em; /* 文字間を広げる */
 }
 
-
 /* footer */
 .footer {
   background-color: #505050;
@@ -1112,6 +1115,7 @@ input[type="submit"]:hover {
 @media screen and (max-width: 767px) {
   .footer-nav {
   padding-block: 20px 5px;
+}
 }
 
 .footer-nav__lists {
@@ -1195,6 +1199,6 @@ input[type="submit"]:hover {
   height: auto;
 }
 
-.ib {
+.li {
   word-spacing: 10px;
 }
