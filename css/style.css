@@ -760,7 +760,7 @@ tr.line02 {
 
 @media screen and (max-width: 767px) {
   .access__image{
-    padding-bottom: 30px;
+    padding-bottom: 29px;
     width: 100%;
   }
   
@@ -795,7 +795,7 @@ tr.line02 {
   .access__text02 {
     font-size: 1rem;
     line-height: 24px;
-    margin-bottom: 6px;
+    margin-bottom: 5px;
   }
 }
 
@@ -810,7 +810,7 @@ tr.line02 {
   .access__text03 {
     font-size: 1rem;
     line-height: 27px;
-    margin-bottom: 5px;
+    padding: 0 0 1px 1px;
   }
 }
 
@@ -848,7 +848,7 @@ tr.line02 {
 .underline {
   border-bottom: #707070 1px solid;
   display: block;          /* 横幅を全体にする */
-  padding-bottom: 25px;
+  padding-bottom: 18px;
 }
 
 .access__text ul {
@@ -866,7 +866,8 @@ tr.line02 {
 @media screen and (max-width: 767px) {
   .access__text05 {
     font-size: 1rem;
-    line-height: 30px;
+    line-height: 25px;
+    padding-left: 0px;
   }
 }
 
@@ -882,7 +883,8 @@ tr.line02 {
   .access__text06 {
     font-size: 1rem;
     line-height: 30px;
-    margin-bottom: 12px;
+    margin-bottom: 0;
+    padding-left: 0;
   }
 }
 
@@ -892,6 +894,10 @@ tr.line02 {
   padding-bottom: 13px;
 }
 
+@media screen and (max-width: 767px) {
+  .underline01 {
+    padding-bottom: 10px;
+}
 @media screen and (max-width: 767px) {
   .access__text {
     justify-content: left;
