@@ -274,6 +274,7 @@ img {
   .fv__text00 {
     font-size: 1.25rem;
     line-height: 40px;
+    padding-top: 45px;
   }
 }
 
@@ -282,7 +283,7 @@ img {
   font-size: 2.5rem;
   line-height: 60px;
   position: relative;
-   margin-top: -4px; /* ← この行だけ上に */
+  margin-top: -4px; /* ← この行だけ上に */
 }
 
 @media screen and (max-width: 1000px) {
@@ -312,7 +313,7 @@ img {
    .fv__text01 {
     font-size: 1.9rem;
     line-height: 40px;
-    top: -0.4px;
+    margin-top: -8px; /* ← この行だけ上に */
    }
   }
 
