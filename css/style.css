@@ -728,7 +728,7 @@ tr.line02 {
 
 @media screen and (max-width: 767px) {
   .access {
-    padding-block: 43px 50px;
+    padding-block: 43px 51px;
   }
 }
 
@@ -929,7 +929,7 @@ tr.line02 {
     font-size: 1rem;
     line-height: 30px;
     text-align: center;
-    margin: 43px 0 34px 0;
+    margin: 40px 0 34px 0;
   }
 }
 
@@ -938,10 +938,17 @@ tr.line02 {
     text-align: left;
   }
 }
+
 .form {
   max-width: 880px;
   margin-inline: auto;
   margin-top: 29px;
+}
+
+@media screen and (max-width: 767px) {
+  .form {
+    margin-top: 25px;
+  }
 }
 
 .form__item {
@@ -967,6 +974,14 @@ tr.line02 {
   line-height: 33px;
 }
 
+@media screen and (max-width: 767px) {
+  .form__label {
+    font-size: 1.125rem;
+    line-height: 33px;
+    padding-top: 1px;
+  }
+}
+
 .form__input {
   flex: 1;
 }
@@ -983,6 +998,15 @@ input[type="email"] {
   height: 40px;
   padding-inline: 15px;
   font-size: 1.1rem;
+}
+
+@media screen and (max-width: 767px) {
+  input[type="text"],
+  input[type="email"] {
+    height: 50px;
+    padding-inline: 15px;
+    font-size: 1.125rem;
+}
 }
 
 textarea {
@@ -1018,6 +1042,11 @@ input[type="submit"] {
   .contact__button input[type="submit"] {
     width: 100%;
     max-width: none;
+    height: 41px;
+    font-size: 1.25rem;
+    line-height: 26px;
+    padding-top: 1px;
+    letter-spacing: 0.1em; /* 文字間を広げる */
   }
 }
 
