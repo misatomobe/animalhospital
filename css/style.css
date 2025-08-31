@@ -182,6 +182,7 @@ img {
   .fv__img {
     height: 100%; /* SPカンプの高さに合わせる */
     margin-top: 0;  /* headerの高さ分 */
+    position: relative;
   }  
 }
 
@@ -189,6 +190,7 @@ img {
     .fv__img {
       height: 100%; /* SPカンプの高さに合わせる */
       margin-top: 50px;  /* headerの高さ分 */
+      position: relative;
     }
 }
 
@@ -210,7 +212,6 @@ img {
     top: 51%;
     padding: 0px 30px 20px 99px;
     max-width: 90%;   /* 画面幅の90%までに制限 */
-    width: auto;      /* テキストに応じた幅 */
     box-sizing: border-box; /* padding込みでサイズ計算 */
     width: 430px;   /* 横幅 */
     height: 210px;  /* 高さ */
@@ -222,33 +223,31 @@ img {
     padding: 0px 25px 20px 99px;
     width: 370px;   /* 横幅 */
     height: 210px;  /* 高さ */
+    top: 51%;
   }
 }
 
 @media screen and (max-width: 767px) {
   .fv__text {
-    top: 51%;
-    padding: 0px 38px 20px 99px;
-    max-width: 90%;   /* 画面幅の90%までに制限 */
-    width: auto;      /* テキストに応じた幅 */
-    box-sizing: border-box; /* padding込みでサイズ計算 */
-    width: 150px;   /* 横幅 */
+    padding: 10px 10px 10px 20px;
+    width: 430px;   /* 横幅 */
     height: 210px;  /* 高さ */
+    bottom: -105px;
+    position: absolute;
+    box-sizing: border-box;
+    top: auto; /* 念のため */
   }
 }
 
 @media screen and (max-width: 375px) {
   .fv__text {
-    height: 148px; 
-    width: 311px;
-    padding: 10px 10px 10px 20px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .fv__text-inner {
-    position: relative;
-    top: -5px; /* ← スマホ時だけ文字を上げる */
+    padding: 5px 10px 20px 20px;
+    width: 311px;   /* 横幅 */
+    height: 148px;  /* 高さ */
+    bottom: -75px;
+    position: absolute;
+    box-sizing: border-box;
+    top: auto; /* 念のため */
   }
 }
 
@@ -260,8 +259,9 @@ img {
 
 @media screen and (max-width: 1000px) {
   .fv__text00 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 60px;
+    padding-top: 18px;
   }
 }
 
@@ -269,14 +269,16 @@ img {
   .fv__text00 {
     font-size: 1.1rem;
     line-height: 40px;
-
+    padding-top: 18px;
   }
 }
 
 @media screen and (max-width: 375px) {
   .fv__text00 {
     font-size: 1.25rem;
-    margin-top: 5px;
+    line-height: 40px;
+    margin-top: -10px;
+    padding-top: 18px;
   }
 }
 
@@ -290,8 +292,8 @@ img {
 
 @media screen and (max-width: 1000px) {
    .fv__text01 {
-    font-size: 2.1rem;
-    line-height: 60px;
+    font-size: 1.7rem;
+    line-height: 40px;
     position: relative;
     margin-top: -4px; /* ← この行だけ上に */
    }
@@ -308,6 +310,7 @@ img {
    .fv__text01 {
     font-size: 1.9rem;
     line-height: 40px;
+    margin-top: 0; /* ← この行だけ上に */
    }
   }
 
