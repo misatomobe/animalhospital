@@ -51,9 +51,19 @@ img {
     background-color: #fff;
 }
 
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    height: inherit;
+    align-items: center;
+}
+
 @media screen and (max-width: 1079px) {
     .header__inner {
-        width: calc(100% - 10px); /* 左右60pxずつ引く */
+      width: 100%;
+      max-width: 1080px;
+      margin: 0 auto; /* 中央寄せ */
+      box-sizing: border-box;
     }
 }
 
@@ -262,14 +272,18 @@ img {
     font-size: 1.3rem;
     line-height: 60px;
     padding-top: 18px;
+    margin-top: 0;
+
   }
 }
 
 @media screen and (max-width: 767px) {
   .fv__text00 {
-    font-size: 1.1rem;
-    line-height: 40px;
-    padding-top: 18px;
+    font-size: 1.5625rem;
+    line-height: 60px;
+    padding-top: 15px;
+    margin-top: 0;
+
   }
 }
 
@@ -301,8 +315,8 @@ img {
 
 @media screen and (max-width: 767px) {
    .fv__text01 {
-    font-size: 1.9rem;
-    line-height: 40px;
+    font-size: 2.1rem;
+    line-height: 50px;
    }
 }
 
