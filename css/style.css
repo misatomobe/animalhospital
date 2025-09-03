@@ -645,7 +645,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .news {
-    padding-block: 42px 28px;
+    padding-block: 42px 48px;
   }
 }
 
@@ -1104,6 +1104,10 @@ input[type="submit"] {
     padding-top: 1px;
     letter-spacing: 0.1em; /* 文字間を広げる */
   }
+
+  .contact__button {
+ margin-top: 14px;
+}
 }
 
 input[type="submit"]:hover {
@@ -1128,7 +1132,12 @@ input[type="submit"]:hover {
   .form__textarea {
     width: 100%;
   }
+
+  .form__textarea textarea {
+    height: 300px;
+  }
 }
+
 
 .contact__button input[type="submit"] {
   letter-spacing: 0.1em; /* 文字間を広げる */
