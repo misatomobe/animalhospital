@@ -568,6 +568,7 @@ img {
 }
 
 
+
 /* service */
 .service {
   padding-block: 65px 60px;
@@ -635,13 +636,10 @@ img {
 }
 
 /* news */
-/* 1080px 以上のサイズに対応するスタイル */
-@media screen and (min-width: 1080px) {
-  .news {
+.news {
     padding-block: 63px 68px;
     position: relative;
   }
-}
 
 @media screen and (max-width: 767px) {
   .news {
@@ -649,9 +647,7 @@ img {
   }
 }
 
-/* 1080px 以上のサイズに対応するスタイル */
-@media screen and (min-width: 1080px) {
-  .table {
+.table {
     border-collapse: collapse;
     width: 100%;
     margin-top: 43px;
@@ -668,7 +664,7 @@ img {
 td {
   border-top: 1px solid #707070;
   border-bottom: 1px solid #707070;
-  padding: 0 0 0px 15px;
+  padding: 0 0 0 15px;
   text-align: left;
   font-size: 1.0625rem;
   font-weight: 500;
@@ -676,8 +672,12 @@ td {
 }
 
 tr {
-  height: 60px;
+  height: auto;
 }
+
+th, td, .th02, .td02 {
+  padding: 14px 0;
+  vertical-align: middle;
 }
 
 @media screen and (max-width: 767px) {
@@ -691,12 +691,11 @@ tr {
   }
 }
 
-@media screen and (min-width: 1080px) {
-  .th01 {
+.th01 {
   font-size: 1.0625rem;
   font-weight: 700;
   line-height: 25px;
-  padding: 15px 0 0 19px;
+  padding-left: 20px;
 }
 
 .th02 {
@@ -704,9 +703,9 @@ tr {
   font-weight: 700;
   line-height: 25px;
   color: #0D96A0;
-  padding: 20px 0 0 2px;
+  padding-right: 15px;
 }
-}
+
 
 @media screen and (max-width: 767px) {
   .td {
@@ -1183,7 +1182,7 @@ input[type="submit"]:hover {
   margin-block: 0 14px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 803px) {
   .footer-nav__lists {
     display: flex;
     flex-wrap: wrap;        /* 画面幅に合わせて改行 */
