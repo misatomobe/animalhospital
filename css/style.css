@@ -1019,6 +1019,12 @@ tr.line02 {
   }
 }
 
+@media screen and (max-width: 375px) {
+  .contact {
+      padding-block: 43px 49px;
+  }
+}
+
 .section-desc {
   font-size: 1.06rem;
   line-height: 30px;
@@ -1181,6 +1187,15 @@ input[type="submit"]:hover {
 
   .form__textarea textarea {
     height: 300px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .form__textarea textarea {
+    height: 265px;
+  }
+  .contact__button {
+    margin-top: 50px;
   }
 }
 
