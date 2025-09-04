@@ -637,13 +637,19 @@ img {
 
 /* news */
 .news {
-    padding-block: 63px 68px;
+    padding-block: 63px 69px;
     position: relative;
   }
 
 @media screen and (max-width: 767px) {
   .news {
     padding-block: 42px 48px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+    .news {
+    padding-block: 42px 51px;
   }
 }
 
@@ -736,22 +742,36 @@ th, td, .th02, .td02 {
   }
   
   .td02 {
-     letter-spacing: -0.029em; /* 狭める */
      padding: 0 10px 10px 10px;
   }
 }
+@media screen and (max-width: 375px) {
+  .td02 {
+     letter-spacing: -0.08em; /* 狭める */
+     padding: 0 10px 10px 10px;
+  }
+}
+
 
 .table table {
   width: 100%;
   border-collapse: collapse;
 }
 
+tr.line02 {
+    border-top: 1px solid #707070;
+    border-bottom: 1px solid #707070;
+    padding-top: 0px;   /* 上の余白 */
+    padding-bottom: 20px; /* 下の余白 */
+    height: auto; /* 高さを固定しない */
+  }
+
 @media screen and (max-width: 767px) {
   tr.line02 {
     border-top: 1px solid #707070;
     border-bottom: 1px solid #707070;
     padding-top: 0px;   /* 上の余白 */
-    padding-bottom: 20px; /* 下の余白 */
+    padding-bottom: 10px; /* 下の余白 */
     height: auto; /* 高さを固定しない */
   }
 }
@@ -857,6 +877,14 @@ th, td, .th02, .td02 {
   }
 }
 
+@media screen and (max-width: 375px) {
+  .access__text03 {
+    padding: 0 0 2px 1px;
+    font-weight: 100;
+    margin-bottom: none;
+  }
+}
+
 .access__text07 {
   color: #0D96A0;
   font-size: 1.5625rem;
@@ -873,6 +901,13 @@ th, td, .th02, .td02 {
   }
 }
 
+@media screen and (max-width: 375px) {
+  .access__text07 {
+    display: inline-block;
+    margin-top: 3px;
+}
+}
+
 .access__text04 {
   font-size: 1.125rem;
   line-height: 27px;
@@ -887,11 +922,23 @@ th, td, .th02, .td02 {
     margin-top: 0;
   }
 }
+ @media screen and (max-width: 375px) {
+  .underline.access__text04 {
+  padding-bottom: 18px; /* 下線と文字の間を調整 */
+  margin-top: -10px;
+}
+ }
 
 .underline {
   border-bottom: #707070 1px solid;
   display: block;          /* 横幅を全体にする */
   padding-bottom: 18px;
+}
+
+@media screen and (max-width: 375px) {
+  .underline {
+  padding: 0 0 20px 0;
+}
 }
 
 .access__text ul {
