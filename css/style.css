@@ -368,7 +368,7 @@ img {
     color: #0D96A0;
     font-size: 1.875rem;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     z-index: 2;
     line-height: 50px;
     font-weight: 700;/* bold */
@@ -397,7 +397,7 @@ img {
   line-height: 33px;
   font-weight: 500;/* medium */
   z-index: 2;
-  margin-bottom: 5px;
+  padding-top: 5px;
 }
 
 @media screen and (max-width: 767px) {
