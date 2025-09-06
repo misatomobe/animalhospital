@@ -753,10 +753,12 @@ th, td, .th02, .td02 {
      padding: 0 10px 10px 10px;
   }
 }
+
 @media screen and (max-width: 375px) {
   .td02 {
-     letter-spacing: -0.08em; /* 狭める */
-     padding: 0 10px 10px 10px;
+     padding: 0 0 18px 10px;
+     font-size: 1rem;
+     line-height: 24px;
   }
 }
 
