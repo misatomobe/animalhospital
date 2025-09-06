@@ -147,23 +147,30 @@ img {
     display: none;
   }
 }
+
 .header-nav__lists {
   display: flex;
   column-gap: 10px;
-  height: inherit;
-  align-items: center;
+  height: 50px;
+  align-items: stretch;
   padding-right: 60px;
 }
 
 .header-nav__link {
   font-size: 0.875rem;
   color: #505050;
-  height: inherit;
+  height: 50px;
   display: flex;
   align-items: center;
   text-transform: capitalize;
   line-height: 33px;
-  padding-top: 5px;
+  padding-top: 0 20px;
+  text-decoration: none;
+  justify-content: center;
+}
+
+.header-nav__list {
+  height: 50px;
 }
 
 /* FV */
@@ -568,7 +575,6 @@ img {
     display: block;
   }
 }
-
 
 
 /* service */
