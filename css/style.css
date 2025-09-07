@@ -825,10 +825,24 @@ tr.line02 {
   line-height: 27px;
 }
 
-.access__image {
+.map-wrap {
   max-width: 440px;
-  height: auto;
+  aspect-ratio: 400 / 300;
+  width: 100%;
+}
+
+.map-wrap iframe {
+  width: 100%;
+  height: 100%;
   display: block;
+  border: 0;
+}
+
+@media screen and (max-width: 375px) {
+  .map-wrap {
+    max-width: 335px;
+    aspect-ratio: 335 / 222;
+  }
 }
 
 @media screen and (max-width: 767px) {
