@@ -221,39 +221,25 @@ img {
   transform: translate(0%, -50%);
   width: 492px;   /* 横幅 */
   height: 210px;  /* 高さ */
-
 }
 
-
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 850px) {
   .fv__text {
-    top: 51%;
-    padding: 0px 30px 20px 99px;
-    max-width: 90%;   /* 画面幅の90%までに制限 */
-    box-sizing: border-box; /* padding込みでサイズ計算 */
-    width: 430px;   /* 横幅 */
-    height: 210px;  /* 高さ */
-  }
+  width: 442px;   /* 横幅 */
+  height: 210px;  /* 高さ */
+}
 }
 
-@media screen and (max-width: 880px) {
-  .fv__text {
-    padding: 0px 25px 20px 99px;
-    width: 370px;   /* 横幅 */
-    height: 210px;  /* 高さ */
-    top: 51%;
-  }
-}
 
 @media screen and (max-width: 767px) {
   .fv__text {
     padding: 10px 10px 10px 20px;
-    width: 430px;   /* 横幅 */
+    width: 380px;   /* 横幅 */
     height: 210px;  /* 高さ */
     bottom: -105px;
     position: absolute;
     box-sizing: border-box;
-    top: auto; /* 念のため */
+    top: auto;
   }
 }
 
@@ -265,7 +251,7 @@ img {
     bottom: -75px;
     position: absolute;
     box-sizing: border-box;
-    top: auto; /* 念のため */
+    top: auto;
   }
 }
 
@@ -275,23 +261,13 @@ img {
   margin-top: 15px; /* ← この行だけ上に */
 }
 
-@media screen and (max-width: 1000px) {
-  .fv__text00 {
-    font-size: 1.3rem;
-    line-height: 60px;
-    padding-top: 18px;
-    margin-top: 0;
 
-  }
-}
-
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 850px) {
   .fv__text00 {
-    font-size: 1.5625rem;
+    font-size: 1.2625rem;
     line-height: 60px;
     padding-top: 15px;
     margin-top: 0;
-
   }
 }
 
@@ -312,16 +288,8 @@ img {
   margin-top: -4px; /* ← この行だけ上に */
 }
 
-@media screen and (max-width: 1000px) {
-   .fv__text01 {
-    font-size: 1.7rem;
-    line-height: 40px;
-    position: relative;
-    margin-top: -4px; /* ← この行だけ上に */
-   }
-}
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 850px) {
    .fv__text01 {
     font-size: 2.1rem;
     line-height: 50px;
