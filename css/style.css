@@ -576,21 +576,6 @@ img {
 }
 
 
-/* デフォルトでは非表示 */
-.br-sp02 {
-  display: none;
-}
-
-/* 1080pxで改行 */
-@media screen and (min-width: 1079px) and (max-width: 1081px) {
-  .br-sp02 {
-    display: block;
-  }
-}
-
-
-
-
 /* service */
 .service {
   padding-block: 65px 60px;
@@ -855,6 +840,7 @@ tr.line02 {
   .map-wrap {
     max-width: 335px;
     aspect-ratio: 335 / 222;
+    margin-bottom: 29px;
   }
 }
 
@@ -916,9 +902,15 @@ tr.line02 {
 
 @media screen and (max-width: 375px) {
   .access__text03 {
-    padding: 0 0 2px 1px;
     font-weight: 100;
-    margin-bottom: none;
+    padding: none;
+    margin: none;
+  }
+
+  .access__text03 span,
+  .access__text07 {
+    vertical-align: middle;
+    margin-bottom: 10px;
   }
 }
 
@@ -941,7 +933,6 @@ tr.line02 {
 @media screen and (max-width: 375px) {
   .access__text07 {
     display: inline-block;
-    margin-top: 3px;
 }
 }
 
