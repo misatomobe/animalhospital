@@ -492,6 +492,7 @@ img {
 @media screen and (max-width: 767px) {
   .strength__h3 {
     margin-top: 27px;
+    font-size: 1.25rem;
   }
 }
 
