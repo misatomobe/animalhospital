@@ -467,8 +467,6 @@ img {
   gap: 15px; /* 画像とh2の間の隙間 */
 }
 
-
-
 /* section-title h2 見出し（全セクション共通） */
 .section-title h2, .section-title02 h2 {
   font-size: 1.6rem;
@@ -481,13 +479,6 @@ img {
 
 .section-bg {
   background-color: rgba(13,150,160,0.102);
-}
-
-.strength__content01 {
-  display: flex;
-  justify-content: center;
-  column-gap: calc(45 / 880 * 100%);
-  margin-top: 46px;
 }
 
 .strength__h3 {
@@ -526,15 +517,36 @@ img {
 }
 }
 
+.strength__content01,
 .strength__content02 {
   display: flex;
   justify-content: center;
-  column-gap: calc(45 / 880 * 100%);
-  margin-top: 48px;
+  align-items: stretch; /* 高さを揃える */
+  column-gap: calc(40 / 880 * 100%);
+  margin-top: 46px;
+}
+
+.strength__text,
+.strength__image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 縦中央揃え */
+  flex: 1; /* 横幅を均等に */
+}
+
+.strength__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 高さに合わせて画像を切り抜く */
+}
+
+.strength__text {
+  max-width: 396px;
 }
 
   @media screen and (max-width: 767px) {
-  .strength__content01, .strength__content02 {
+  .strength__content01,
+  .strength__content02 {
     flex-direction: column; /* 縦並び */
     margin-top: 41px;
   }
@@ -558,12 +570,12 @@ img {
     font-size: 1rem;
     line-height: 30px;
   }
+
+  .strength__text {
+  max-width: 100%;
+}
 }
 
-.strength__image img {
-  width: 1045px;
-  height: auto;
-}
 
 /* デフォルトでは非表示 */
 .br-sp02 {
@@ -576,6 +588,8 @@ img {
     display: block;
   }
 }
+
+
 
 
 /* service */
@@ -787,7 +801,6 @@ tr.line02 {
   }
 }
 
-
 @media screen and (max-width: 767px) {
   table, th, td, tr, tbody {
     display: block; /* 全部ブロック要素化 */
@@ -828,7 +841,7 @@ tr.line02 {
 
 .map-wrap {
   max-width: 440px;
-  aspect-ratio: 400 / 300;
+  aspect-ratio: 440 / 300;
   width: 100%;
 }
 
