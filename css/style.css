@@ -485,8 +485,7 @@ img {
   font-size: 1.375rem;
   font-weight: 700;
   line-height: 33px;
-  margin: 48px 0 18px 0;
-  letter-spacing: -0.01em;
+  margin: 0 0 18px 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -505,7 +504,6 @@ img {
 @media screen and (max-width: 767px) {
   .strength__desc {
   font-size: 1rem;
-  font-weight: 500;
   line-height: 30px;
 }
 }
@@ -583,8 +581,8 @@ img {
   display: none;
 }
 
-/* 767px以下で改行 */
-@media screen and (max-width: 767px) {
+/* 1080pxで改行 */
+@media screen and (min-width: 1079px) and (max-width: 1081px) {
   .br-sp02 {
     display: block;
   }
