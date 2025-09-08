@@ -214,10 +214,10 @@ img {
 
 .fv__text {
   position: absolute;
-  top: 51%;
+  top: 51.5%;
   background-color:rgba(255, 255, 255, 0.702);
   display: inline-block;
-  padding: 0px 38px 20px 99px;
+  padding: 0px 36px 20px 99px;
   transform: translate(0%, -50%);
   width: 492px;   /* 横幅 */
   height: 210px;  /* 高さ */
@@ -258,7 +258,7 @@ img {
 .fv__text00 {
   font-size: 1.5625rem;
   line-height: 60px;
-  margin-top: 15px; /* ← この行だけ上に */
+  margin-top: 11px; /* ← この行だけ上に */
 }
 
 
@@ -406,7 +406,7 @@ img {
 
 /* strength */
 .strength {
-  padding-block: 65px 66px;
+  padding-block: 65px 70px;
 }
 
 @media screen and (max-width: 767px) {
@@ -489,8 +489,8 @@ img {
   display: flex;
   justify-content: center;
   align-items: stretch; /* 高さを揃える */
-  column-gap: calc(40 / 880 * 100%);
-  margin-top: 46px;
+  column-gap: calc(43 / 880 * 100%);
+  margin-top: 47px;
 }
 
 .strength__text,
@@ -501,10 +501,17 @@ img {
   flex: 1; /* 横幅を均等に */
 }
 
-.strength__image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* 高さに合わせて画像を切り抜く */
+@media screen and (min-width: 1080px) {
+  .strength__image {
+    max-width: 440px;      /* 親に幅を固定 */
+    width: 100%;
+    height: 100%;
+    flex: 0 0 auto;    /* flexで広がらないように */
+  }
+  .strength__image img {
+    width: 100%;       /* 親に合わせる */
+    height: auto;
+  }
 }
 
 .strength__text {
@@ -527,7 +534,7 @@ img {
   }
 
   .strength__h3 {
-    fostrengthnt-size: 1.25rem;
+    font-size: 1.25rem;
     text-align: center;
     line-height: 30px;
     margin-bottom: 8px;
@@ -543,10 +550,21 @@ img {
 }
 }
 
+.br-1080 {
+  display: none;
+}
+
+/* PC幅（1080px以上）のときだけ改行 */
+@media screen and (min-width: 1080px) {
+  .br-1080 {
+    display: block;
+  }
+}
+
 
 /* service */
 .service {
-  padding-block: 65px 60px;
+  padding-block: 65px 58px;
 }
 
 @media screen and (max-width: 767px) {
@@ -612,7 +630,7 @@ img {
 
 /* news */
 .news {
-    padding-block: 63px 69px;
+    padding-block: 63px 72px;
     position: relative;
   }
 
@@ -631,7 +649,7 @@ img {
 .table {
     border-collapse: collapse;
     width: 100%;
-    margin-top: 43px;
+    margin-top: 45px;
     max-width: none;
   }     
   
@@ -762,7 +780,7 @@ tr.line02 {
 
 /* access */
 .access {
-  padding-block: 64px 67px;
+  padding-block: 60px 67px;
 }
 
 @media screen and (max-width: 767px) {
@@ -912,7 +930,7 @@ tr.line02 {
 }
 
 .underline.access__text04 {
-  padding-bottom: 30px; /* 下線と文字の間を調整 */
+  padding-bottom: 29px; /* 下線と文字の間を調整 */
   margin-top: none;
 }
 
@@ -935,6 +953,7 @@ tr.line02 {
   border-bottom: #707070 1px solid;
   display: block;          /* 横幅を全体にする */
   padding-bottom: 18px;
+  width: 100%;
 }
 
 @media screen and (max-width: 375px) {
@@ -1213,7 +1232,7 @@ input[type="submit"]:hover {
 /* footer */
 .footer {
   background-color: #505050;
-  padding-block: 47px 68px;
+  padding-block: 46px 68px;
   text-align: center;
 }
 
@@ -1230,7 +1249,7 @@ input[type="submit"]:hover {
 
 .footer-nav {
   border-bottom: 1px solid #fff;
-  padding-block: 18px 9px;
+  padding-block: 20px 8px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1282,7 +1301,7 @@ input[type="submit"]:hover {
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 33px;
-  margin-block: 27px 0;
+  margin-block: 24px 0;
 }
 
 @media screen and (max-width: 767px) {
