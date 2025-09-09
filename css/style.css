@@ -321,13 +321,13 @@ img {
 
 /* greeting */
 .greeting {
-  padding: 67px 60px 61px 60px;
+  padding: 67px 0 61px 0;
   position: relative;
   background-image: url("../images/asiato_2.jpg");
   background-repeat: no-repeat;
   background-size: 83.75px auto;
-  background-position: calc(100% - 76.24px) calc(100% - 32.88px);
-  max-width: 880px;
+  background-position: calc(100% - 75px) calc(100% - 32.88px);
+  max-width: 1080px;
   margin-inline: auto;
 }
 
@@ -708,6 +708,27 @@ img {
   flex: 1;           /* 残りの幅をすべて取る */
 }
 
+@media screen and (max-width: 767px) {
+  .news-list a {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .news-list time,
+  .news-title,
+  .news-text {
+    width: 100%;
+    margin: 4px 0;
+  }
+
+  .news-title {
+    margin-right: 0;
+  }
+
+  .news-list {
+    margin: 15px 0 10px 0;
+  }
+}
 
 
 /* access */
