@@ -327,6 +327,8 @@ img {
   background-repeat: no-repeat;
   background-size: 83.75px auto;
   background-position: calc(100% - 76.24px) calc(100% - 32.88px);
+  max-width: 880px;
+  margin-inline: auto;
 }
 
 @media screen and (max-width: 767px){
@@ -428,6 +430,11 @@ img {
   .strength {
     padding-block: 51px 35px;
   }
+}
+
+.strength__container {
+  max-width: 880px;
+   margin-inline: auto;
 }
 
 .section-title {
@@ -660,6 +667,8 @@ img {
   margin: 0;
   padding: 0;
   border-top: 1px solid #707070;
+  max-width: 880px;
+  margin-inline: auto;
 }
 
 .news-list li {
@@ -717,6 +726,8 @@ img {
   justify-content: center;
   column-gap: calc(46 / 880 * 100%);
   margin-top: 44px;
+  max-width: 880px;
+  margin-inline: auto;
 }
 
 @media screen and (max-width: 767px) {
