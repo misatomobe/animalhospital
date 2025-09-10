@@ -441,7 +441,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 19px; /* 画像とh2の間の隙間 */
+  gap: 21px; /* 画像とh2の間の隙間 */
 }
 
 .section-title02 {
@@ -453,7 +453,7 @@ img {
 
 /* section-title h2 見出し（全セクション共通） */
 .section-title h2, .section-title02 h2 {
-  font-size: 1.6rem;
+  font-size: 1.5625rem;
 }
 
 .title-icon {
@@ -614,7 +614,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .service-item__desc01 {
-    margin: 0 0 11px 0;
+    margin: 1px 0 11px 0;
   }
 }
 
@@ -640,7 +640,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .service__item {
-    margin-bottom: 40px;
+    margin-bottom: 39px;
   }
 }
 
@@ -658,7 +658,7 @@ img {
 
 @media screen and (max-width: 375px) {
     .news {
-    padding-block: 42px 51px;
+    padding-block: 45px 40px;
   }
 }
 
@@ -684,6 +684,12 @@ img {
   color: inherit;
 }
 
+@media screen and (max-width: 767px) {
+  .news-list li a {
+    padding: 22px 10px 0 10px;
+  }
+}
+
 .news-list time {
   font-size: 1.0625rem;
   line-height: 25px;
@@ -702,11 +708,36 @@ img {
   margin-right: 12px;
 }
 
-.news-text {
+@media screen and (max-width: 767px) {
+  .news-title {
+    padding-top: 0;
+  }
+}
+
+.news-text,
+.news-text01 {
   font-size: 1.0625rem;
   line-height: 30px;
   font-weight: 500;
   flex: 1;           /* 残りの幅をすべて取る */
+}
+
+@media screen and (max-width: 767px) {
+  .news-text {
+    font-size: 1rem;
+    line-height: 24px;
+    padding-bottom: 26px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .news-text01 {
+    font-size: 1rem;
+    line-height: 24px;
+    padding-bottom: 26px;
+    width: 100%;
+    word-break: keep-all; /* 日本語の単語を途中で改行しない */
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -715,11 +746,14 @@ img {
     align-items: flex-start;
   }
 
-  .news-list time,
-  .news-title,
-  .news-text {
+  .news-list time{
     width: 100%;
-    margin: 4px 0;
+    margin: 6px 0;
+  }
+
+ .news-title {
+    width: 100%;
+    margin-bottom: 8px;
   }
 
   .news-title {
@@ -727,8 +761,9 @@ img {
   }
 
   .news-list {
-    margin: 15px 0 10px 0;
+    margin: 42px 0 10px 0;
   }
+
 }
 
 
