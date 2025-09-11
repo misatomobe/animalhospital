@@ -499,23 +499,50 @@ img {
   line-height: 30px;
 }
 }
-
-.strength__content01,
-.strength__content02 {
+@media screen and (min-width: 1080px) {
+  .strength__content01
+   {
   display: flex;
   justify-content: center;
   align-items: stretch; /* 高さを揃える */
   column-gap: calc(43 / 880 * 100%);
-  margin-top: 47px;
+  margin-top: 45px;
+}
+
+.strength__content02 {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* 高さを揃える */
+  column-gap: calc(44 / 880 * 100%);
+  margin-top: 49px;
+}
+
+.strength__content03 {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* 高さを揃える */
+  column-gap: calc(44 / 880 * 100%);
+  margin-top: 50px;
 }
 
 .strength__text,
+.strength__text01,
 .strength__image {
   display: flex;
   flex-direction: column;
   justify-content: center; /* 縦中央揃え */
   flex: 1; /* 横幅を均等に */
 }
+
+.strength__text,
+.strength__text01. {
+  max-width: 398px;
+}
+.strength__text01 {
+  padding-top: 2px;
+}
+}
+
 
 @media screen and (min-width: 1080px) {
   .strength__image {
@@ -530,13 +557,10 @@ img {
   }
 }
 
-.strength__text {
-  max-width: 396px;
-}
-
   @media screen and (max-width: 767px) {
   .strength__content01,
-  .strength__content02 {
+  .strength__content02,
+  .strength__content03 {
     flex-direction: column; /* 縦並び */
     margin-top: 42px;
   }
@@ -564,29 +588,7 @@ img {
   .strength__text {
   max-width: 100%;
 }
-}
 
-.br-1080 {
-  display: none;
-}
-
-/* PC幅（1080px以上）のときだけ改行 */
-@media screen and (min-width: 1080px) {
-  .br-1080 {
-    display: block;
-  }
-}
-
-.br-375 {
-  display: none;
-}
-
-/* SP幅（375px以下）のときだけ改行 */
-@media screen and (min-width: 375px) {
-  .br-375 {
-    display: block;
-  }
-}
 
 /* service */
 .service {
