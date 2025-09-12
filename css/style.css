@@ -890,16 +890,13 @@ img {
 @media screen and (max-width: 375px) {
   .access__text03 {
     font-weight: 100;
-    padding: none;
-    margin: none;
-  }
-
-  .access__text03 span,
-  .access__text07 {
+    margin-top: 8px;
+    padding: 0;
     vertical-align: middle;
-    margin-bottom: 10px;
   }
 }
+
+
 
 .access__text07 {
   color: #0D96A0;
@@ -920,7 +917,9 @@ img {
 @media screen and (max-width: 375px) {
   .access__text07 {
     display: inline-block;
-}
+    padding-left: 2px;
+    margin-bottom: 10px;
+  }
 }
 
 .access__text04 {
@@ -1156,7 +1155,7 @@ input[type="submit"] {
   color: #FFF;
   font-size: 1.6rem;
   font-weight: 700;
-  border-radius: 8px;
+  border-radius: 10px;
   text-align: center;
   cursor: pointer;
   transition: 0.4s;
@@ -1176,7 +1175,7 @@ input[type="submit"] {
     font-size: 1.25rem;
     line-height: 26px;
     padding-top: 1px;
-    letter-spacing: 0.1em; /* 文字間を広げる */
+    letter-spacing: 0.6em; /* 文字間を広げる */
   }
 
   .contact__button {
@@ -1217,7 +1216,7 @@ input[type="submit"]:hover {
     height: 265px;
   }
   .contact__button {
-    margin-top: 49px;
+    margin-top: 48px;
   }
 }
 
