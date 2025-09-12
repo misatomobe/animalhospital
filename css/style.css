@@ -1175,7 +1175,7 @@ input[type="submit"] {
     font-size: 1.25rem;
     line-height: 26px;
     padding-top: 1px;
-    letter-spacing: 0.6em; /* 文字間を広げる */
+    letter-spacing: 10em; /* 文字間を広げる */
   }
 
   .contact__button {
