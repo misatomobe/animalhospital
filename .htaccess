@@ -1,0 +1,5 @@
+
+AuthUserFile "/home/xs559275/misa-create.com/htpasswd/animalhospital.misa-create.com/animalhospital/.htpasswd"
+AuthName "Member Site"
+AuthType BASIC
+require valid-user
