@@ -1149,7 +1149,7 @@ img {
 
 /* contact */
 .contact {
-  padding-block: 62px 80px;
+  padding-block: 62px 79px;
   position: relative;
 }
 
@@ -1296,10 +1296,6 @@ input[type="submit"] {
     padding-top: 1px;
     letter-spacing: 10em; /* 文字間を広げる */
   }
-
-  .contact__button {
- margin-top: 14px;
-}
 }
 
 input[type="submit"]:hover {
@@ -1368,7 +1364,7 @@ input[type="submit"]:hover {
 
 .footer-nav {
   border-bottom: 1px solid #fff;
-  padding-block: 20px 8px;
+  padding-block: 20px 6px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1420,7 +1416,7 @@ input[type="submit"]:hover {
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 33px;
-  margin-block: 24px 0;
+  margin-block: 26px 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -1443,8 +1439,8 @@ input[type="submit"]:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  column-gap: 14px;
-  margin-top: 7px;
+  column-gap: 13px;
+  margin-top: 10px;
 }
 
 @media screen and (max-width:767px) {
