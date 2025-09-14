@@ -965,7 +965,7 @@ img {
  @media screen and (max-width: 375px) {
   .access__text04 {
   padding-bottom: 18px; /* 下線と文字の間を調整 */
-  margin-top: -10px;
+  margin-top: -11px;
 }
  }
 
@@ -982,13 +982,16 @@ img {
   padding-top: 17px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 375px) {
   .access__text05 {
     font-size: 1rem;
     line-height: 25px;
-    padding-left: 0px;
+    padding: 16px 0 0 0;
+    margin-top: 0;
+    
   }
 }
+
 
 .access__text06 {
   font-size: 1.125rem;
@@ -1005,6 +1008,16 @@ img {
     line-height: 30px;
     margin-bottom: 0;
     padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .access__text06 {
+    font-size: 1rem;
+    line-height: 30px;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-bottom: 11px;
   }
 }
 
@@ -1030,15 +1043,45 @@ img {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 0;   /* ← 下端に配置 */
   width: 100%;
   height: 1px;
   background-color: #707070; /* 下線の色 */
 }
 
+@media screen and (max-width: 375px) {
+.underline {
+  position: relative;
+}
+
+.underline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0px;   /* ← 上端に配置 */
+  width: 100%;
+  height: 1px;
+  background-color: #707070; /* 線の色 */
+}
+
+.underline01{
+  position: relative;
+}
+
+.underline01::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;   /* ← 下端に配置 */
+  width: 100%;
+  height: 1px;
+  background-color: #707070; /* 下線の色 */
+}
+}
+
 @media screen and (max-width: 767px) {
   .underline01 {
-    padding-bottom: 10px;
+    padding-bottom: 12px;
   }
 }
 
