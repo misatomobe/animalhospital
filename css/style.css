@@ -458,10 +458,29 @@ img {
   gap: 20px; /* 画像とh2の間の隙間 */
 }
 
+.section-title04 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* 画像とh2の間の隙間 */
+  padding-left: 5px;
+}
+
+.section-title05 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px; /* 画像とh2の間の隙間 */
+  padding-left:3px;
+}
+
+
 /* section-title h2 見出し（全セクション共通） */
 .section-title h2,
 .section-title02 h2,
-.section-title03 h2
+.section-title03 h2,
+.section-title04 h2,
+.section-title05 h2
  {
   font-size: 1.5625rem;
 }
