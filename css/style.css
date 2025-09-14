@@ -670,7 +670,7 @@ img {
 
 @media screen and (max-width: 375px) {
     .news {
-    padding-block: 43px 40px;
+    padding-block: 43px 30px;
   }
 }
 
@@ -791,6 +791,12 @@ img {
     padding-bottom: 14px;
     padding-left: 3px;
     padding-right: 10px;
+    font-size: 1rem;
+    line-height: 24px;
+  }
+
+  .news-text01 {
+    padding-bottom: 15px;
     font-size: 1rem;
     line-height: 24px;
   }
