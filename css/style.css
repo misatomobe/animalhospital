@@ -591,7 +591,10 @@ img {
 
 
   @media screen and (max-width: 767px) {
-  .strength__content01,
+  .strength__content01 {
+    flex-direction: column; /* 縦並び */
+    margin-top: 40px;
+  }
   .strength__content02,
   .strength__content03 {
     flex-direction: column; /* 縦並び */
@@ -602,8 +605,14 @@ img {
     order: 1; /* 写真を先に */
   }
 
-  .strength__text {
+  .strength__text,
+  .strength__text01 {
     order: 2; /* 文字を後に */
+  }
+
+  .strength__text01 {
+    margin-left: 0;
+    padding-top: 1px;
   }
 
   .strength__h3 {
@@ -1166,13 +1175,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .contact {
-      padding-block: 43px 50px;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .contact {
-      padding-block: 43px 49px;
+      padding-block: 43px 51px;
   }
 }
 
