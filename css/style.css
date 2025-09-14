@@ -448,11 +448,21 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px; /* 画像とh2の間の隙間 */
+  gap: 16px; /* 画像とh2の間の隙間 */
+}
+
+.section-title03 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* 画像とh2の間の隙間 */
 }
 
 /* section-title h2 見出し（全セクション共通） */
-.section-title h2, .section-title02 h2 {
+.section-title h2,
+.section-title02 h2,
+.section-title03 h2
+ {
   font-size: 1.5625rem;
 }
 
@@ -1222,6 +1232,12 @@ input[type="email"] {
   line-height: 33px;
 }
 
+@media screen and (max-width: 375px) {
+  .form__textarea {
+  padding: 13px;
+}
+}
+
 input[type="submit"] {
   width: 200px;
   height: 50px;
@@ -1290,7 +1306,7 @@ input[type="submit"]:hover {
     height: 265px;
   }
   .contact__button {
-    margin-top: 48px;
+    margin-top: 50px;
   }
 }
 
