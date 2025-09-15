@@ -1,4 +1,3 @@
-
 @charset "utf-8";
 
 body {
@@ -100,27 +99,27 @@ img {
     align-items: center;
 }
 
-.header__logo {
+.header__rogo {
   display: flex;         /* 横並びにする */
   align-items: center;   /* 上下中央揃えにする */
   padding-left: 100px;
 }
 
 @media screen and (max-width: 767px) {
-  .header__logo {
+  .header__rogo {
     font-size: 1.25rem;
     padding-left: 20px;
   }
 }
 
-.logo {
+.rogo {
   width: 25px;
   height: auto;
   margin-right: 9.51px;
 }
 
 @media screen and (max-width: 767px) {
-  .logo {
+  .rogo {
     width: 25px;
     height: auto;
   }
@@ -583,7 +582,7 @@ img {
 }
 
 .strength__text01 {
-  max-width: 400px;
+  max-width: 100%;
   margin-left: 4px;
   padding-left: 0;
   padding-top: 4px;
@@ -648,7 +647,7 @@ img {
 }
 
 /* SP幅（375px以下）のときだけ改行 */
-@media screen and (max-width: 375px) {
+@media screen and (width: 375px) {
   .br-375 {
     display: block;
   }
@@ -1456,4 +1455,17 @@ input[type="submit"]:hover {
 
 .li {
   word-spacing: 10px;
+}
+
+/* スクリーンリーダー専用（画面には出さない） */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
