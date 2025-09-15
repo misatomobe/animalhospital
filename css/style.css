@@ -582,7 +582,7 @@ img {
 }
 
 .strength__text01 {
-  max-width: 400px;
+  max-width: 100%;
   margin-left: 4px;
   padding-left: 0;
   padding-top: 4px;
@@ -647,7 +647,7 @@ img {
 }
 
 /* SP幅（375px以下）のときだけ改行 */
-@media screen and (max-width: 375px) {
+@media screen and (width: 375px) {
   .br-375 {
     display: block;
   }
