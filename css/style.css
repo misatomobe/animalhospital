@@ -107,20 +107,20 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .header__logo {
+  .header__rogo {
     font-size: 1.25rem;
     padding-left: 20px;
   }
 }
 
-.logo {
+.rogo {
   width: 25px;
   height: auto;
   margin-right: 9.51px;
 }
 
 @media screen and (max-width: 767px) {
-  .logo {
+  .rogo {
     width: 25px;
     height: auto;
   }
