@@ -1,14 +1,73 @@
-@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
 
+/* ------------
+variable
+-------------- */
+:root {
+  --font-color: #505050;
+  --font-sans: "Noto Sans JP", sans-serif;
+  --main-color: #0D96A0;
+  --border-color-gray: #707070;
+}
 
+/* ------------
+base
+-------------- */
+html {
+  -webkit-appearance: none;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  word-break: break-all;
+  font-size: 10px;
+}
 
 body {
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 1rem;
-  font-weight: 700;/* normal は 400、bold は 700 */
-  line-height: 1.5;
-  color: #505050;
+  font-family: var(--font-sans);
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.8rem;
+  line-height: calc(33 /18);
+  color: var(--font-color);
+  padding-top: 5rem;
 }
+
+@media (max-width: 767px) {
+  body {
+    font-size: 1.6rem;
+    line-height: calc(30 / 16);
+  }
+}
+
+#container {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* ------------
+common
+-------------- */
+/* PC,SPの非表示設定 */
+@media (max-width: 767px;) {
+  .pc {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .sp {
+    display: none !important;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* ↑コード直しここまで */
 
 a {
   display: inline-block;
@@ -19,19 +78,6 @@ a {
 
 a:hover {
   opacity: 0.7;
-}
-
-img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.inner {
-  max-width: 1080px;
-  width: 100%;
-  padding-inline: 100px;
-  margin-inline: auto;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1079px) {
@@ -53,75 +99,49 @@ img {
 /* header */
 .header {
     width: 100%;
-    height: 50px;
+    height: 5rem;
+    background: #FF00FF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-left: 9.9rem; */
+    padding-left: calc(99 / 1080 * 100vw);
+    /* padding-right: 6rem; */
+    padding-right: calc(60 / 1080 * 100vw);
     position: fixed;
-    top: 0;
-    left: 0;
     z-index: 9999;
-    background-color: #fff;
+    top: 0;
+    left: 0;    
 }
 
-.header__inner {
-    display: flex;
-    justify-content: space-between;
-    height: inherit;
-    align-items: center;
+@media (max-width: 767px) {
+  .header {
+    padding-left: 2rem;
+  }
 }
 
-@media screen and (max-width: 1079px) {
-    .header__inner {
-      width: 100%;
-      max-width: 1080px;
-      margin: 0 auto; /* 中央寄せ */
-      box-sizing: border-box;
-    }
-}
-
-/* 767px未満で 左右余白20px に切り替える */
-@media screen and (max-width: 767px) {
-    .header__inner {
-        padding-left: 0;
-        margin-left: 0;
-        margin-right: 0;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .header__inner {
-        padding-left: 0;
-        margin-left: 0;
-        margin-right: 0;
-    }
-}
-
-.header__inner {
-    display: flex;
-    justify-content: space-between;
-    height: inherit;
-    align-items: center;
-}
-
-.header__rogo {
+.header__logo a {
   display: flex;         /* 横並びにする */
   align-items: center;   /* 上下中央揃えにする */
-  padding-left: 100px;
+  column-gap: 0.95rem;
+  height:  5rem;
 }
 
 @media screen and (max-width: 767px) {
-  .header__rogo {
+  .header__logo {
     font-size: 1.25rem;
     padding-left: 20px;
   }
 }
 
-.rogo {
+.logo {
   width: 25px;
   height: auto;
   margin-right: 9.51px;
 }
 
 @media screen and (max-width: 767px) {
-  .rogo {
+  .logo {
     width: 25px;
     height: auto;
   }
