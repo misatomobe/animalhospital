@@ -48,7 +48,7 @@ body {
 common
 -------------- */
 /* PC,SPの非表示設定 */
-@media (max-width: 767px;) {
+@media (max-width: 767px) {
   .pc {
     display: none !important;
   }
