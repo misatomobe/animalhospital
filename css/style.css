@@ -230,7 +230,47 @@ section {
 
 @media (max-width: 767px) {
   .mv__catch h2 span {
-  font-size: calc(30 / 375 * 100vw);
-  line-height: calc(40 / 30);
+    font-size: calc(30 / 375 * 100vw);
+    line-height: calc(40 / 30);
+  }
 }
+
+/* message */
+.message-sec {
+  padding: 6rem 3rem;
+}
+
+@media (max-width: 767px) {
+  .message-sec {
+    padding: 4.9rem 2rem 3.9rem;
+  } 
+}
+
+.message-sec__title {
+  text-align: center;
+}
+
+
+.message-sec__title h2 {
+  font-size: 3rem;
+  line-height: calc(50 / 30);
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .message-sec__title h2 {
+    font-size: 2.5rem;
+    line-height: calc(35 / 25);
+  }
+}
+
+.message-sec__contents {
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 767px) {
+  .message-sec__contents {
+    margin-top: 1.7rem;
+  }
 }
