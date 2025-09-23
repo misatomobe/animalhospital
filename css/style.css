@@ -274,3 +274,33 @@ section {
     margin-top: 1.7rem;
   }
 }
+
+.message-sec__text {
+  text-align: center;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .message-sec__text {
+    text-align: left;
+  }
+}
+
+.message-sec__text p {
+  position: relative;
+}
+
+.message-sec__text-deco {
+  width: 8.375rem;
+  position: absolute;
+  bottom: -2.6rem;
+  right: -2.37rem;
+}
+
+@media (max-width: 767px) {
+  .message-sec__text-deco {
+    width: 6.835rem;
+    bottom: 0.75rem;
+    right: -0.95rem;
+  }
+}
