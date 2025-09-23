@@ -337,3 +337,20 @@ section {
     row-gap: 4.2rem;
   }
 }
+
+.strength-sec__item {
+  display: flex;
+  align-items: center;
+  column-gap: calc(45 / 880 * 100%);  
+}
+
+@media (max-width: 767px) {
+  .strength-sec__item {
+    flex-direction: column-reverse;
+    row-gap: 2.6rem;
+  }
+}
+
+.strength-sec__item:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
