@@ -304,3 +304,36 @@ section {
     right: -0.95rem;
   }
 }
+
+/* strength */
+.strength-sec {
+  padding: 7.1rem 3rem 6.8rem;
+}
+
+@media (max-width:767px) {
+  .strength-sec {
+    padding: 5.1rem 2rem 3.5rem;
+  }
+}
+
+.strength-sec__contents {
+  margin-top: 4.8rem;
+}
+
+@media (max-width:767px) {
+  .strength-sec__contents {
+    margin-top: 4.2rem;
+  } 
+}
+
+.strength-sec__items {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5rem;
+}
+
+@media (max-width: 767px) {
+  .strength-sec__items {
+    row-gap: 4.2rem;
+  }
+}
