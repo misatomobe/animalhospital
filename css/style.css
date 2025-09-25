@@ -700,6 +700,7 @@ article:first-of-type .news-sec__item {
   margin-top: 2.7rem;
   padding: 1.5rem 0 1.4rem;
   border-top: 0.1rem solid var(--border-color-gray);
+  border-bottom: 0.1rem solid var(--border-color-gray);
 }
 
 @media (max-width: 767px) {
