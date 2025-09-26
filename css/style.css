@@ -610,6 +610,7 @@ article:first-of-type .news-sec__item {
 
 .access-sec-item__map {
   width: 50%;
+  flex: 0 0 50%;
 }
 
 @media (max-width: 767px) {
