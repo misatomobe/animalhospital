@@ -368,51 +368,58 @@
     <section id="contact">
         <div class="contact-sec section-bg">
             <div class="inner">
-                <div class="section-title03">
-                <img src="images/asiato.png" alt="装飾" class="title-icon left">
-                <h2 class="section-title">お問い合わせ</h2>
-                <img src="images/asiato.png" alt="装飾" class="title-icon right">
-            </div>
-            <p class="section-desc">
-                ご予約やご質問などお気軽にお問い合わせください。<br>
-                お問い合わせいただいてから3日以内の返信となります。
-            </p>
-            <div class="contact__form form">
-                <form>
-                    <div class="form__items">
-                        <dl class="form__item">
-                            <dt class="form__label">
-                                <label for="name">お名前</label>
+               <div class="access-sec__title common-title">
+                    <div class="title-icon">
+                        <img src="./images/cat-foot-icon.svg" alt="タイトルアイコン">
+                    </div>
+                    <h2>お問い合わせ</h2>
+                    <div class="title-icon">
+                        <img src="./images/cat-foot-icon.svg" alt="タイトルアイコン">
+                    </div>
+                </div>
+                <div class="contact-sec__contents">
+                    <div class="contact-sec__text">
+                        <p>ご予約やご質問などお気軽にお問い合わせください。<br>お問い合わせいただいてから3日以内の返信となります。</p>
+                    </div>
+                    <form action="">
+                    <div class="contact-sec__form-block">
+                        <dl class="form__area">
+                            <dt>
+                                <label for="your-name">お名前</label>
                             </dt>
-                            <dd class="form__input">
-                                <input type="text" name="name" id="name">
+                            <dd>
+                                <input type="text" name="your-name" id="your-name">
+                            </dd>
+                        </dl>
+                        <dl class="form__area">
+                            <dt>
+                                <label for="your-email">メールアドレス</label>
+                            </dt>
+                            <dd>
+                                <input type="email" name="your-email" id="your-email">
                             </dd>
                         </dl>
                         <dl class="form__item">
-                            <dt class="form__label">
-                                <label for="email">メールアドレス</label>
+                            <dt>
+                              <label for="your-message">内　容</label>  
                             </dt>
-                            <dd class="form__input">
-                                <input type="email" name="email" id="email">
-                            </dd>
-                        </dl>
-                        <dl class="form__item">
-                            <dt class="form__label">
-                              <label for="contact-text" id="form__content">内容</label>  
-                            </dt>
-                            <dd class="form__textarea">
-                                <textarea name="contact" id="contact-text"></textarea>
+                            <dd>
+                                <textarea name="your-message" id="your-message" class="form-control form-textarea" cols="30" rows="10"></textarea>
                             </dd>
                         </dl>
                     </div>
-                    <div class="contact__button">
-                        <input type="submit" value="送信">
+                    <div class="form-sbmit-area">
+                        <input type="submit" class="form-submit" value="送　信">
                     </div>
-                </form>
-            </div>
+                </div>
+            </form>
+
             </div>
         </div>
+    </div>
     </section>
+
+    </div>
     </main>
 
     <footer class="footer">
