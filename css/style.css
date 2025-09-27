@@ -203,17 +203,19 @@ section {
 
 @media (max-width: 767px) {
   .mv__catch {
-  width: calc(311 / 375 * 100vw);
-  height: calc(148 / 375 * 100vw);
-  padding-left: calc(20 / 375 * 100vw);
-}
+    width: calc(311 / 375 * 100vw);
+    height: calc(148 / 375 * 100vw);
+    padding-left: calc(20 / 375 * 100vw);
+  }
 }
 
 .mv__catch h2 {
   font-size: calc(25 / 1080 * 100vw);
   line-height: calc(36.2 / 25);
   font-weight: bold;
+  padding-top: 0.7rem;
 }
+
 
 @media (max-width: 767px) {
   .mv__catch h2 {
@@ -307,7 +309,7 @@ section {
 
 /* strength */
 .strength-sec {
-  padding: 7.1rem 3rem 6.8rem;
+  padding: 6.6rem 3rem 6.8rem;
 }
 
 @media (max-width:767px) {
@@ -317,7 +319,7 @@ section {
 }
 
 .strength-sec__contents {
-  margin-top: 4.8rem;
+  margin-top: 4.6rem;
 }
 
 @media (max-width:767px) {
@@ -402,6 +404,10 @@ section {
   .strength-sec-item__image {
     width: 100%;
   }
+}
+
+.service-sec__item__image {
+  width: 100%;
 }
 
 /* service */
