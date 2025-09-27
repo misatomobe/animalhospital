@@ -303,7 +303,7 @@ section {
   .message-sec__text-deco {
     width: 6.835rem;
     bottom: 0.75rem;
-    right: -0.95rem;
+    right: 0.9rem;
   }
 }
 
@@ -383,6 +383,7 @@ section {
   .strength-sec-item__title h3 {
     font-size: 2rem;
     line-height: calc(30 / 20);
+    text-align: center;
   }
 }
 
@@ -409,6 +410,15 @@ section {
 .service-sec__item__image {
   width: 100%;
 }
+
+/* 767px以下のときに改行 */
+@media (max-width: 767px) {
+  .break-767::after {
+    content: "\A";
+    white-space: pre;
+  }
+}
+
 
 /* service */
 .service-sec {
