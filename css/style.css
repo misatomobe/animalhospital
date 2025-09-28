@@ -705,6 +705,7 @@ article:first-of-type .news-sec__item {
 
 .access-sec-item__tel {
   margin-top: 1.4rem;
+  position: relative;
 }
 
 @media (max-width: 767px) {
@@ -722,6 +723,8 @@ article:first-of-type .news-sec__item {
   line-height: calc(40 / 25);
   font-weight: bold;
   color: var(--main-color);
+  position: relative;
+  left: -0.4rem;
 }
 
 .access-sec-item__mail {
@@ -776,7 +779,7 @@ article:first-of-type .news-sec__item {
 
 @media (max-width: 767px) {
   .contact-sec {
-    padding: 4.3rem 2rem 4.9rem;
+    padding: 4.3rem 2rem 5.1rem;
   }
 }
 
@@ -841,7 +844,7 @@ article:first-of-type .news-sec__item {
 
 @media (max-width: 767px) {
   .form-area:not(:first-of-type) {
-    margin-top: 0.7rem;
+    margin-top: 0.9rem;
   }
 }
 
@@ -853,7 +856,7 @@ article:first-of-type .news-sec__item {
   font-size: 2rem;
   line-height: calc(33 / 20);
   font-weight: bold;
-  padding-top: 1rem;
+  padding-top: 0.8rem;
 }
 
 @media (max-width: 767px) {
