@@ -727,6 +727,12 @@ article:first-of-type .news-sec__item {
   left: -0.4rem;
 }
 
+@media (max-width: 767px) {
+  .access-sec-item__tel a {
+    left: -0.2rem;
+  }
+}
+
 .access-sec-item__mail {
   margin-top: 0.8rem;
 }
