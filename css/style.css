@@ -111,6 +111,22 @@ section {
   }
 }
 
+/* 375px以下のときだけ改行 */
+@media (width: 375px) {
+  .break-375::after {
+    content: "\A";       /* 改行を追加 */
+    white-space: pre;    /* 改行を反映させる */
+  }
+}
+
+/* 320px以下のときだけ改行 */
+@media (max-width: 320px) {
+  .break-320::after {
+    content: "\A";       /* 改行を追加 */
+    white-space: pre;    /* 改行を反映させる */
+  }
+}
+
 /* header */
 .header {
   width: 100%;
@@ -531,13 +547,14 @@ section {
   width: 100%;
 }
 
-/* 767px以下のときに改行 */
-@media (max-width: 767px) {
+/* 767pxのときのみ改行 */
+@media (width: 767px) {
   .break-767::after {
     content: "\A";
     white-space: pre;
   }
 }
+
 
 /* news */
 .news-sec {
