@@ -485,9 +485,8 @@ section {
 .service-sec__items {
   display: flex;
   column-gap: calc(50 / 880 * 100%);
-  justify-content: flex-start;
-  max-width: 880px;
-}
+  }
+
 
 @media (max-width: 767px) {
   .service-sec__items {
@@ -497,7 +496,15 @@ section {
 }
 
 .service-sec__item {
-  flex: 1;
+  flex: 0 1 auto;
+  width: calc((100% - 50px) / 3);
+}
+
+@media (max-width: 767px) {
+  .service-sec__item {
+    flex: 1;
+    width: 100%;
+  }
 }
 
 .service-sec-item__title {
