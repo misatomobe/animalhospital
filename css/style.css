@@ -19,7 +19,7 @@ html {
 
 body {
   font-family: var(--font-sans);
-  font-optical-sizing: auto;
+  /* font-optical-sizing: auto; */
   font-weight: 500;
   font-style: normal;
   font-size: 1.8rem;
