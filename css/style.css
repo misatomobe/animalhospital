@@ -445,6 +445,14 @@ section {
   }
 }
 
+@media (max-width: 374px) {
+  .strength-sec-item__title h3 {
+    font-size: 1.75rem;
+    line-height: calc(30 / 17.5);
+    text-align: center;
+  }
+}
+
 .strength-sec-item__text {
   margin-top: 1.9rem;
 }
@@ -452,6 +460,14 @@ section {
 @media (max-width: 767px) {
   .strength-sec-item__text {
     margin-top: 0.8rem;
+  } 
+}
+
+@media (max-width: 374px) {
+  .strength-sec-item__text {
+    margin-top: 0.8rem;
+    font-size: 1.7rem;
+    line-height: calc(30 / 17);
   } 
 }
 
@@ -464,9 +480,6 @@ section {
     width: 100%;
   }
 }
-
-
-
 
 /* service */
 .service-sec {
