@@ -127,6 +127,13 @@ section {
   }
 }
 
+/* 890px以下のときに改行 */
+@media (max-width: 890px) {
+  .br-890 {
+    display: block;
+  }
+}
+
 /* header */
 .header {
   width: 100%;
@@ -778,7 +785,6 @@ article:first-of-type .news-sec__item {
   .access-sec-item__tel a {
     left: -0.2rem;
     pointer-events: auto;
-    text-decoration: underline;
   }
 }
 
