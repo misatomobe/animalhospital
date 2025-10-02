@@ -127,8 +127,8 @@ section {
   }
 }
 
-/* 890px以下のときに改行 */
-@media (max-width: 890px) {
+/* 768px以上890px以下のときに改行 */
+@media (min-width: 768px) and (max-width: 890px) {
   .br-890 {
     display: block;
   }
@@ -160,8 +160,8 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: calc(99 / 1080 * 100vw);
-  padding-right: calc(60 / 1080 * 100vw);
+  padding-left: 9.17%;
+  padding-right: 5.56%;
 }
 
 @media (max-width: 767px) {
@@ -236,7 +236,7 @@ section {
   position: absolute;
   top: 0;
   left: 0;
-  padding-top: calc(152 / 1080 * 100vw);
+  padding-top: calc(152 / 1080 * 100%);
 }
 
 @media (max-width: 767px) {
@@ -247,19 +247,19 @@ section {
 }
 
 .mv__catch {
-  width: calc(492 / 1080 * 100vw);
-  height: calc(210 / 1080 * 100vw);
+  width: 45.56%;               /* 親要素幅に対する横幅 */
+  aspect-ratio: 492 / 210;     /* width ÷ height で比率を指定 */
   background: rgba(255, 255, 255, 0.7);
   display: flex;
   align-items: center;
-  padding-left: calc(99 / 1080 * 100vw);
+  padding-left: calc(99 / 1080 * 100%);
 }
 
 @media (max-width: 767px) {
   .mv__catch {
-    width: calc(311 / 375 * 100vw);
-    height: calc(148 / 375 * 100vw);
-    padding-left: calc(20 / 375 * 100vw);
+    width: 82.93%;
+    aspect-ratio: 311 / 148;
+    padding-left: calc(20 / 375 * 100%);
   }
 }
 
@@ -401,7 +401,7 @@ section {
 .strength-sec__item {
   display: flex;
   align-items: center;
-  column-gap: calc(45 / 880 * 100%);  
+  column-gap: calc(44 / 880 * 100%);  
 }
 
 @media (max-width: 767px) {
@@ -971,6 +971,12 @@ article:first-of-type .news-sec__item {
   justify-content: center;
 }
 
+@media (max-width: 767px) {
+  .form-submit-area {
+    margin-top: 5.1rem;
+  }
+}
+
 .form-submit {
   width: 20rem;
   height: 5rem;
@@ -987,11 +993,13 @@ article:first-of-type .news-sec__item {
   border: 0.2rem solid var(--main-color);
   transition: all .4s;
   text-align: center;
+  padding-bottom: 0.1rem;
 }
 
 @media (max-width: 767px) {
   .form-submit {
-    width: 33.5rem;
+    max-width: 335px;
+    width: 100%;
     height: 4.1rem;
     font-size: 2rem;
   }
