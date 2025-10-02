@@ -770,11 +770,15 @@ article:first-of-type .news-sec__item {
   color: var(--main-color);
   position: relative;
   left: -0.4rem;
+  pointer-events: none;
+  text-decoration: none;
 }
 
 @media (max-width: 767px) {
   .access-sec-item__tel a {
     left: -0.2rem;
+    pointer-events: auto;
+    text-decoration: underline;
   }
 }
 
