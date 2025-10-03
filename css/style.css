@@ -614,7 +614,7 @@ section {
 
 .news-sec-item:hover {
   background-color: #f0f8ff;
-  transform: translateY(-3px);
+  transform: translateY(-3px); /* ちょっと浮く感じ */
 }
 
 .news-sec__items article {
