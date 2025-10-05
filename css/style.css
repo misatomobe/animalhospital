@@ -216,64 +216,110 @@ section {
   position: absolute;
   top: 0;
   left: 0;
-  padding-top: calc(152 / 1080 * 100%);
+  top: 30.4%;
 }
 
 @media (max-width: 767px) {
   .mv__contents {
     display: flex;
     align-items: flex-end;
+    top: 0%;
   }
 }
 
 .mv__catch {
-  width: 45.56%;               /* 親要素幅に対する横幅 */
-  aspect-ratio: 492 / 210;     /* width ÷ height で比率を指定 */
+  width: 49.2rem;
+  height: 21rem;               /* 親要素幅に対する横幅 */
   background: rgba(255, 255, 255, 0.7);
   display: flex;
   align-items: center;
-  padding-left: calc(99 / 1080 * 100%);
+  padding-left: 9.9rem;
+}
+
+@media (max-width: 1000px) {
+  .mv__catch {
+    width: 38.2rem;
+    height: 20rem; 
+  }
 }
 
 @media (max-width: 767px) {
   .mv__catch {
-    width: 82.93%;
-    aspect-ratio: 311 / 148;
-    padding-left: calc(20 / 375 * 100%);
+    width: 31.1rem;
+    height: 14.8rem;
+    padding-left: 2rem;
+    top: initial;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 350px) {
+  .mv__catch {
+    width: 28.1rem;
+    height: 11.8rem;
   }
 }
 
 .mv__catch h2 {
-  font-size: calc(25 / 1080 * 100vw);
+  font-size: 2.5rem;
   line-height: calc(36.2 / 25);
   font-weight: bold;
-  padding-top: 0.1rem;
+  top: 30.4%;
 }
 
+@media (max-width: 1000px) {
+  .mv__catch h2 {
+    font-size: 1.8rem;
+    line-height: calc(29 / 18);
+  }
+}
 
 @media (max-width: 767px) {
   .mv__catch h2 {
-    font-size: calc(20 / 375 * 100vw);
+    font-size: 2rem;
     line-height: calc(29 / 20);
-    padding-top: 0.4rem;
+    top: 0.73%;
+  }
+}
+
+@media (max-width: 350px) {
+  .mv__catch h2 {
+    font-size: 1.8rem;
+    line-height: calc(29 / 18);
   }
 }
 
 .mv__catch h2 span {
-  font-size: calc(40 / 1080 * 100vw);
+  font-size: 4rem;
   line-height: calc(60 /40);
   color: var(--main-color);
   display: inline-block;
   padding-top: 0.6rem;
 }
 
+@media (max-width: 1000px) {
+  .mv__catch h2 span {
+    font-size: 3rem;
+    line-height: calc(40 /30);
+  }
+}
+
 @media (max-width: 767px) {
   .mv__catch h2 span {
-    font-size: calc(30 / 375 * 100vw);
+    font-size: 3rem;
     line-height: calc(40 / 30);
     padding-top: 0.8rem;
   }
 }
+
+@media (max-width: 350px) {
+  .mv__catch h2 span {
+    font-size: 2.5rem;
+    line-height: calc(30 / 25);
+  }
+}
+
+
 
 /* message */
 .message-sec {
