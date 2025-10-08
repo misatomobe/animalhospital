@@ -161,6 +161,13 @@ section {
   padding-right: 6rem;
 }
 
+/* ブレイクポイントは920px */
+@media (max-width: 920px) {
+  .header__inner {
+    padding: 0 3rem;
+  }
+}
+
 @media (max-width: 767px) {
   .header__inner {
     padding: 0 2rem;
