@@ -533,7 +533,7 @@ section {
 
 .service-sec__items {
   display: flex;
-  column-gap: calc(50 / 880 * 100%);
+  column-gap: 5.68%;
   width: 100%;
   justify-content: flex-start; /* 左寄せ固定 */
 }
@@ -547,8 +547,7 @@ section {
 }
 
 .service-sec__item {
-  flex: 0 0 calc((100% - 100px) / 3); /* 3列固定 + gap分を引く */
-  width: calc((100% - 50px) / 3);
+  width: calc((100% - (5.68% * 2)) / 3);/* gap 2つ分を引いて3等分 */
   max-width: 100%;
   box-sizing: border-box;
 }
@@ -662,12 +661,11 @@ section {
 }
 
 .news-sec__items article {
-  border-top: 0.1rem solid var(--border-color-gray);
   border-bottom: 0.1rem solid var(--border-color-gray);
 }
 
-.news-sec__items article:nth-child(-n+4) {
-  border-bottom: none;
+.news-sec__items article:first-child {
+  border-top: 0.1rem solid var(--border-color-gray);
 }
 
 .news-sec-item__date time {
@@ -833,14 +831,14 @@ section {
   color: var(--main-color);
   position: relative;
   left: -0.4rem;
-  pointer-events: none;
-  text-decoration: none;
 }
 
-@media (max-width: 767px) {
-  .access-sec-item__tel a {
+@media (min-width: 767px) {
+  .access-sec-item__tel a[href*="tel:"]  {
     left: -0.2rem;
-    pointer-events: auto;
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
   }
 }
 
