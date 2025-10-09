@@ -483,6 +483,7 @@ section {
     font-size: 2rem;
     line-height: calc(30 / 20);
     text-align: center;
+    white-space: nowrap;
   }
 }
 
@@ -828,6 +829,7 @@ section {
   line-height: calc(27 / 18);
 }
 
+
 .access-sec-item__tel a {
   font-size: 2.5rem;
   line-height: calc(40 / 25);
@@ -839,7 +841,6 @@ section {
 
 @media (min-width: 767px) {
   .access-sec-item__tel a[href*="tel:"]  {
-    left: -0.2rem;
     pointer-events: none;
     cursor: default;
     text-decoration: none;
