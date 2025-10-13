@@ -846,7 +846,7 @@ section {
 }
 
 @media (min-width: 767px) {
-  .access-sec-item__tel a[href*="tel:"]  {
+  a[href*="tel:"]  {
     pointer-events: none;
     cursor: default;
     text-decoration: none;
@@ -1109,8 +1109,6 @@ section {
   .footer__nav ul a {
     font-size: 1.8rem;
     line-height: calc(33 / 18);
-    flex-wrap: wrap;
-    justify-content: center;
     padding: 0 1rem; 
   }
 }
