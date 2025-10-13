@@ -949,6 +949,7 @@ form {
 
 .form-area {
   display: flex;
+  margin-top: 3.8rem;
 }
 
 @media (max-width: 767px) {
@@ -960,7 +961,7 @@ form {
 }
 
 .form-area:not(:first-of-type) {
-  margin-top: 3rem;
+  margin-top: 2.4rem;
 }
 
 @media (max-width: 767px) {
@@ -977,7 +978,7 @@ form {
   font-size: 2rem;
   line-height: calc(33 / 20);
   font-weight: bold;
-  margin-top: 0.8rem;
+  margin-top: 0.6rem;
 }
 
 @media (max-width: 767px) {
