@@ -659,8 +659,7 @@ section {
 
 @media (max-width: 767px) {
   .news-sec-item {
-    padding: 1.8rem 1rem 2.7rem;
-    padding-right: 0;
+    padding: 2.8rem 0 2.7rem 1rem;
     flex-direction: column;
     align-items: initial;
   }
@@ -686,11 +685,6 @@ section {
   display: block;
 }
 
-@media (max-width: 767px) {
-  .news-sec-item__date time {
-    margin-top: 1rem;
-  }
-}
 
 .news-sec-item__title {
   width: 18.4rem;
