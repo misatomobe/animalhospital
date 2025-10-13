@@ -955,6 +955,7 @@ form {
   .form-area {
     flex-direction: column;
     row-gap: 0.2rem;
+    margin-top: 3.5rem;
   }
 }
 
@@ -964,7 +965,7 @@ form {
 
 @media (max-width: 767px) {
   .form-area:not(:first-of-type) {
-    margin-top: 0.9rem;
+    margin-top: 1.7rem;
   }
 }
 
@@ -985,6 +986,7 @@ form {
     height: initial;
     font-size: 1.8rem;
     line-height: calc(33 / 18);
+    margin-top: 0;
   }
 }
 
