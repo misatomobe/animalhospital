@@ -937,12 +937,12 @@ section {
   }
 }
 
-.contact-sec__form-block {
+form {
   margin-top: 3.9rem;
 }
 
 @media (max-width: 767px) {
-  .contact-sec__form-block {
+  form {
     margin-top: 2.7rem;
   }
 }
@@ -976,7 +976,7 @@ section {
   font-size: 2rem;
   line-height: calc(33 / 20);
   font-weight: bold;
-  padding-top: 0.8rem;
+  margin-top: 0.8rem;
 }
 
 @media (max-width: 767px) {
