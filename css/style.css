@@ -693,7 +693,7 @@ section {
 @media (max-width: 767px) {
   .news-sec-item__title {
     width: initial;
-    margin-top: 0.2rem;
+    padding-top: 0.2rem;
   }   
 }
 
@@ -710,7 +710,7 @@ section {
 
 @media (max-width: 767px) {
   .news-sec-item__text {
-    margin-top: 0.6rem;
+    padding-top: 0.6rem;
   }
 }
 
@@ -725,8 +725,6 @@ section {
     line-height: calc(24 /16);
   }
 }
-
-
 
 /* access */
 .access-sec {
