@@ -391,6 +391,12 @@ section {
   position: relative;
 }
 
+@media (min-width: 768px) and (max-width: 950px) {
+  .message-sec__text p  {
+    font-size: 1.7rem;
+  }
+}
+
 .message-sec__text-deco {
   width: 8.375rem;
   position: absolute;
@@ -653,8 +659,7 @@ section {
 
 @media (max-width: 767px) {
   .news-sec-item {
-    padding: 1.8rem 1rem 2.7rem;
-    padding-right: 0;
+    padding: 2.8rem 0 2.7rem 1rem;
     flex-direction: column;
     align-items: initial;
   }
@@ -680,11 +685,6 @@ section {
   display: block;
 }
 
-@media (max-width: 767px) {
-  .news-sec-item__date time {
-    margin-top: 1rem;
-  }
-}
 
 .news-sec-item__title {
   width: 18.4rem;
@@ -693,7 +693,7 @@ section {
 @media (max-width: 767px) {
   .news-sec-item__title {
     width: initial;
-    margin-top: 0.2rem;
+    padding-top: 0.2rem;
   }   
 }
 
@@ -710,7 +710,7 @@ section {
 
 @media (max-width: 767px) {
   .news-sec-item__text {
-    margin-top: 0.6rem;
+    padding-top: 0.6rem;
   }
 }
 
@@ -725,8 +725,6 @@ section {
     line-height: calc(24 /16);
   }
 }
-
-
 
 /* access */
 .access-sec {
@@ -840,7 +838,7 @@ section {
 }
 
 @media (min-width: 767px) {
-  .access-sec-item__tel a[href*="tel:"]  {
+  a[href*="tel:"]  {
     pointer-events: none;
     cursor: default;
     text-decoration: none;
@@ -937,34 +935,36 @@ section {
   }
 }
 
-.contact-sec__form-block {
+form {
   margin-top: 3.9rem;
 }
 
 @media (max-width: 767px) {
-  .contact-sec__form-block {
+  form {
     margin-top: 2.7rem;
   }
 }
 
 .form-area {
   display: flex;
+  margin-top: 3.8rem;
 }
 
 @media (max-width: 767px) {
   .form-area {
     flex-direction: column;
     row-gap: 0.2rem;
+    margin-top: 3.5rem;
   }
 }
 
 .form-area:not(:first-of-type) {
-  margin-top: 3rem;
+  margin-top: 2.4rem;
 }
 
 @media (max-width: 767px) {
   .form-area:not(:first-of-type) {
-    margin-top: 0.9rem;
+    margin-top: 1.7rem;
   }
 }
 
@@ -976,7 +976,7 @@ section {
   font-size: 2rem;
   line-height: calc(33 / 20);
   font-weight: bold;
-  padding-top: 0.8rem;
+  margin-top: 0.6rem;
 }
 
 @media (max-width: 767px) {
@@ -985,6 +985,7 @@ section {
     height: initial;
     font-size: 1.8rem;
     line-height: calc(33 / 18);
+    margin-top: 0;
   }
 }
 
@@ -1103,8 +1104,6 @@ section {
   .footer__nav ul a {
     font-size: 1.8rem;
     line-height: calc(33 / 18);
-    flex-wrap: wrap;
-    justify-content: center;
     padding: 0 1rem; 
   }
 }
