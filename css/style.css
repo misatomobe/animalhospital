@@ -683,7 +683,7 @@ section {
 @media (max-width: 767px) {
   .news-sec-item__title {
     width: initial;
-    padding-top: 0.2rem;
+    margin-top: 0.2rem;
   }   
 }
 
@@ -700,7 +700,7 @@ section {
 
 @media (max-width: 767px) {
   .news-sec-item__text {
-    padding-top: 0.6rem;
+    margin-top: 0.6rem;
   }
 }
 
@@ -931,20 +931,20 @@ form {
 
 @media (max-width: 767px) {
   form {
-    margin-top: 2.7rem;
+    margin-top: 3.6rem;
   }
 }
 
 .form-area {
   display: flex;
-  margin-top: 3.8rem;
+  margin-top: 0;
 }
 
 @media (max-width: 767px) {
   .form-area {
     flex-direction: column;
     row-gap: 0.2rem;
-    margin-top: 3.5rem;
+    margin-top: 0;
   }
 }
 
