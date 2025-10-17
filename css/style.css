@@ -101,16 +101,6 @@ section {
   scroll-margin-top: 5rem;
 }
 
-.br-375 {
-  display: none;
-}
-
-@media (width: 375px) {
-  .br-375 {
-     display: block;
-  }
-}
-
 /* 375px以下のときだけ改行 */
 @media (width: 375px) {
   .break-375::after {
@@ -309,7 +299,7 @@ section {
   line-height: calc(60 /40);
   color: var(--main-color);
   display: inline-block;
-  padding-top: 0.6rem;
+  margin-top: 0.6rem;
 }
 
 @media (max-width: 950px) {
@@ -323,7 +313,7 @@ section {
   .mv__catch h2 span {
     font-size: 3rem;
     line-height: calc(40 / 30);
-    padding-top: 0.8rem;
+    margin-top: 0.8rem;
   }
 }
 
