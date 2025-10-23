@@ -506,27 +506,27 @@ section {
 }
 
 /* service */
-.service-sec {
+.service {
   padding: 6.3rem 3rem 5.9rem;
 }
 
 @media (max-width: 767px) {
-  .service-sec {
+  .service {
     padding: 4.5rem 2rem 3.9rem;
   }
 }
 
-.service-sec__contents {
+.service__contents {
   margin-top: 4.8rem;
 }
 
 @media (max-width: 767px) {
-  .service-sec__contents {
+  .service__contents {
     margin-top: 4.4rem;
   }
 }
 
-.service-sec__items {
+.service__items {
   display: flex;
   column-gap: 5.68%;
   width: 100%;
@@ -535,71 +535,71 @@ section {
 
 
 @media (max-width: 767px) {
-  .service-sec__items {
+  .service__items {
     flex-direction: column;
     row-gap: 3.9rem;
   }
 }
 
-.service-sec__item {
+.service__item {
   width: calc((100% - (5.68% * 2)) / 3);/* gap 2つ分を引いて3等分 */
   max-width: 100%;
   box-sizing: border-box;
 }
 
 @media (max-width: 767px) {
-  .service-sec__item {
+  .service__item {
     flex: 1;
     width: 100%;
   }
 }
 
-.service-sec-item__title {
+.service-item__title {
   margin-top: 1.9rem;
   text-align: center;
 }
 
 @media (max-width: 767px) {
-  .service-sec-item__title {
+  .service-item__title {
     margin-top: 3rem;
   }
 }
 
-.service-sec-item__title h3 {
+.service-item__title h3 {
   font-size: 2rem;
   line-height: calc(25 / 20);
   font-weight: bold;
 }
 
 @media (max-width: 767px) {
-  .service-sec-item__title h3 {
+  .service-item__title h3 {
     line-height: calc(30 / 20);
   }
 }
 
-.service-sec-item__text {
+.service-item__text {
   margin-top: 0.8rem;
 }
 
 @media (max-width: 767px) {
-  .service-sec-item__text {
+  .service-item__text {
     margin-top: 0.7rem;
   }
 }
 
-.service-sec-item__text p {
+.service-item__text p {
   font-size: 1.7rem;
   line-height: calc(30 / 17);
 }
 
 @media (max-width: 767px) {
-  .service-sec-item__text p {
+  .service-item__text p {
     font-size: 1.6rem;
     line-height: calc(30 / 16);
   }
 }
 
-.service-sec__item__image {
+.service__item__image {
   width: 100%;
 }
 
@@ -610,7 +610,6 @@ section {
     white-space: pre;
   }
 }
-
 
 /* news */
 .news-sec {
@@ -964,13 +963,12 @@ form {
 
 .form-area dt {
   width: 16.9rem;
-  height: 4rem;
   display: flex;
   align-items: center;
   font-size: 2rem;
   line-height: calc(33 / 20);
   font-weight: bold;
-  margin-top: 0.6rem;
+  padding: 0.5rem 0;
 }
 
 @media (max-width: 767px) {
@@ -979,7 +977,7 @@ form {
     height: initial;
     font-size: 1.8rem;
     line-height: calc(33 / 18);
-    margin-top: 0;
+    padding: 0.4rem 0;
   }
 }
 
