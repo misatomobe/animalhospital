@@ -883,45 +883,45 @@ section {
 
 
 /* contact */
-.contact-sec {
+.contact {
   padding: 6.2rem 3rem 8rem;
 }
 
 @media (max-width: 767px) {
-  .contact-sec {
+  .contact {
     padding: 4.3rem 2rem 5rem;
   }
 }
 
-.contact-sec__contents {
+.contact__contents {
   margin-top: 2.5rem;
 }
 
 @media (max-width: 767px) {
-  .contact-sec__contents {
+  .contact__contents {
     margin-top: 4.1rem;
   }
 }
 
-.contact-sec__text {
+.contact__text {
   text-align: center;
 }
 
 @media (max-width: 767px) {
-  .contact-sec__text {
+  .contact__text {
     text-align: left;
     display: flex;
     justify-content: center;
   }
 }
 
-.contact-sec__text p {
+.contact__text p {
   font-size: 1.7rem;
   line-height: calc(30 / 17);
 }
 
 @media (max-width: 767px) {
-  .contact-sec__text p {
+  .contact__text p {
     font-size: 1.6rem;
     line-height: calc(30 / 16);
   }
