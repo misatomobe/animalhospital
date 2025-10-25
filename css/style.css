@@ -205,7 +205,7 @@ section {
   align-items: center;
   font-size: 1.4rem;
   font-weight: 700;
-  transition: all 0.4s ease;
+  transition: opacity 0.4s ease, color 0.4s ease;
   line-height: calc(33 / 14);
   justify-content: center;
   color: var(--font-color);
@@ -849,12 +849,13 @@ section {
 
 .ib-span a {
   color: #505050;
-  transition: all 0.4s ease;
+  transition: opacity 0.4s ease, color 0.4s ease;
 }
 
 .ib-span a:hover {
   color: var(--main-color);
   text-decoration: underline;
+  opacity: 0.8;
 }
 
 .access-item__time {
@@ -1155,7 +1156,7 @@ form {
 .footer__sns ul li a {
   display: block;
   padding: 0 0.6rem;
-  transition: all 0.4s ease;
+  transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
 .footer__sns ul li a:hover {
