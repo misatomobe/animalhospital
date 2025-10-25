@@ -966,7 +966,8 @@ form {
   height: 4rem;
   display: flex;
   align-items: center;
-  font-size: 2rem;
+  font-
+  size: 2rem;
   line-height: calc(33 / 20);
   font-weight: bold;
 }
