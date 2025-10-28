@@ -642,7 +642,7 @@ section {
 
 @media (max-width: 767px) {
   .news-item {
-    padding: 2.8rem 1rem 2.7rem 1rem;
+    padding: 2.8rem 1rem 2.7rem;
     flex-direction: column;
     align-items: initial;
   }
@@ -849,13 +849,13 @@ section {
 
 .ib-span a {
   color: #505050;
-  transition: opacity 0.4s ease, color 0.4s ease;
+  opacity: 1;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ib-span a:hover {
   color: var(--main-color);
-  text-decoration: underline;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .access-item__time {
