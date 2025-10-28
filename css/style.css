@@ -317,8 +317,6 @@ section {
   }
 }
 
-
-
 /* message */
 .message {
   padding: 6rem 3rem;
@@ -488,7 +486,6 @@ section {
 
 @media (max-width: 374px) {
   .strength-item__text {
-    margin-top: 0.8rem;
     font-size: 1.7rem;
     line-height: calc(30 / 17);
   } 
