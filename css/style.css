@@ -147,8 +147,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 10rem;
-  padding-right: 6rem;
+  padding: 0 6rem 0 10rem;
 }
 
 /* ブレイクポイントは950px */
