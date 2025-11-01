@@ -639,6 +639,7 @@ section {
 
 .news-item:hover {
   opacity: 0.6;
+  color: var(--font-color);
 }
 
 .news__items article {
@@ -837,6 +838,7 @@ section {
 
 .ib-span a:hover {
   color: var(--main-color);
+  opacity: 0.7;
 }
 
 .access-item__time {
