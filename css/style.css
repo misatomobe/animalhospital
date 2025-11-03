@@ -163,7 +163,7 @@ section {
   align-items: center;   
   column-gap: 0.95rem;
   height:  5rem;
-  transition: all 0.4s ease;
+  transition: opacity 0.4s ease;
 }
 
 .header__logo a:hover {
@@ -626,7 +626,7 @@ section {
   align-items: center;
   padding: 1.6rem 2rem 1.3rem;
   column-gap: calc(25 / 880 * 100%);
-  transition: all 0.4s ease;
+  transition: opacity 0.4s ease;
 }
 
 @media (max-width: 767px) {
@@ -831,8 +831,7 @@ section {
 
 .ib-span a {
   color: #505050;
-  opacity: 1;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ib-span a:hover {
@@ -1010,7 +1009,7 @@ form {
   font-weight: bold;
   cursor: pointer;
   border: 0.1rem solid var(--main-color);
-  transition: all 0.4s ease;
+  transition: background-color 0.4s ease, color 0.4s ease;
   text-align: center;
   padding-bottom: 0.1rem;
 }
@@ -1069,7 +1068,7 @@ form {
   line-height: calc(33 / 20);
   color: #fff;
   font-weight: bold;
-  transition: all 0.4s ease;
+  transition: opacity 0.4s ease;
 }
 
 @media (max-width: 767px) {
@@ -1082,8 +1081,6 @@ form {
 
 .footer__nav ul a:hover {
   opacity: 0.6;
-  color: #fff;
-  transition: all 0.4s ease;
 }
 
 .footer__copyright {
@@ -1142,7 +1139,6 @@ form {
 .footer__sns ul li a:hover {
   transform: scale(1.2);
   opacity: 0.6;
-  color: var(--main-color);
 }
 
 .footer__sns ul li a .twitter {
